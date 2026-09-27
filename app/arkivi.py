@@ -31,12 +31,16 @@ def embed(text):
     return v
 
 def gen(prompt, npred=300, model=None):
-    body = json.dumps({'model': model or LLM, 'prompt': prompt, 'stream': False,
+    m = model or LLM
+    body = json.dumps({'model': m, 'prompt': prompt, 'stream': False,
                        'options': {'temperature': 0, 'num_predict': npred}, 'think': False}).encode('utf-8')
     req = urllib.request.Request(OLLAMA_GEN, data=body, headers={'Content-Type': 'application/json'})
     with urllib.request.urlopen(req, timeout=180) as r:
         d = json.loads(r.read().decode('utf-8'))
-    return (d.get('response') or d.get('thinking') or '').strip()
+    out = (d.get('response') or d.get('thinking') or '').strip()
+    if not out:
+        raise RuntimeError('gen() ktheu pergjigje BOSH (modeli ' + m + ' mungon ose gaboi) — verifiko: ollama list && ollama pull ' + m)
+    return out
 
 def teksti_i_skedarit(p):
     if p.suffix.lower() == '.pdf':
