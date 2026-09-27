@@ -44,10 +44,7 @@ def gelltit_lak():
             did = "d" + str(n)
             faza = "indeksoj"
             for k, ch in enumerate(c):
-                try:
-                    v = arkivi.embed(ch)
-                except Exception:
-                    v = []
+                v = arkivi.embed(ch)  # deshton me ze nese endpoint-i i embedimeve s'pergjigjet/kthen bosh
                 baza.append({"id": did + "-" + str(k), "dok": did, "file": str(p.relative_to(arkivi.KORPUS)),
                              "tekst": ch, "vec": v})
             kuptova = "po" if len(text.strip()) > 40 else "JO"

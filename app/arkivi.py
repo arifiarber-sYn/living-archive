@@ -11,7 +11,7 @@ VLERESIMET = BASE / 'indeksi' / 'vleresimet.jsonl'
 OLLAMA = 'http://127.0.0.1:11434/api/embeddings'
 OLLAMA_GEN = 'http://127.0.0.1:11434/api/generate'
 EMB = os.environ.get('ARK_EMB', 'nomic-embed-text')
-LLM = os.environ.get('ARK_LLM', 'qwen3.8-liruar:latest')
+LLM = os.environ.get('ARK_LLM', 'qwen3:4b')  # default PUBLIK (ollama pull qwen3:4b); ndrysho me ARK_LLM
 PORT = int(os.environ.get('ARK_PORT', '8903'))
 CHUNK = 700
 TOPK = 5
@@ -24,7 +24,11 @@ def embed(text):
     body = json.dumps({'model': EMB, 'prompt': text[:2000]}).encode('utf-8')
     req = urllib.request.Request(OLLAMA, data=body, headers={'Content-Type': 'application/json'})
     with urllib.request.urlopen(req, timeout=60) as r:
-        return json.loads(r.read().decode('utf-8')).get('embedding') or []
+        v = json.loads(r.read().decode('utf-8')).get('embedding') or []
+    if not v:
+        raise RuntimeError('embed() ktheu vektor BOSH (modeli ' + EMB + ' mungon ose gaboi) — ' +
+                           'verifiko: ollama list && ollama pull ' + EMB)
+    return v
 
 def gen(prompt, npred=300, model=None):
     body = json.dumps({'model': model or LLM, 'prompt': prompt, 'stream': False,
@@ -65,14 +69,13 @@ def gelltit():
         c = copto(text)
         did = 'd' + str(n)
         for k, ch in enumerate(c):
-            try:
-                v = embed(ch)
-            except Exception:
-                v = []
+            v = embed(ch)  # deshton me ze (raise) nese endpoint-i s'pergjigjet ose kthen bosh
             baza.append({'id': did + '-' + str(k), 'dok': did, 'file': str(p.relative_to(KORPUS)),
                          'tekst': ch, 'vec': v})
         raport.append({'dok': did, 'file': str(p.relative_to(KORPUS)), 'shkronja': len(text),
                        'copa': len(c), 'kuptova': ('po' if len(text.strip()) > 40 else 'JO')})
+    if any(not c['vec'] for c in baza):
+        raise RuntimeError('indeksi me vektor BOSH — gelltitja e dështoi, mos e ruaj')
     INDEKS.write_text(json.dumps({'krijuar': ts(), 'copa': baza, 'raport': raport}, ensure_ascii=False), encoding='utf-8')
     return raport, len(baza)
 

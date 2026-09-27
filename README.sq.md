@@ -6,11 +6,28 @@ përgjigjet me **citime të verifikueshme**, thotë **“s’e di”** kur s’k
 
 ## Si niset (i huaj, nën 10 minuta)
 ```bash
-# 1) korpusi: vendos skedarët (tekst ose PDF) te korpus/
-python3 app/arkivi.py gelltit      # indekson + shkruan raportin “çka kuptova e çka jo”
-python3 app/ui.py                  # UI: http://127.0.0.1:8903
+# 0) shkarko dy modelet lokale (të dyja publike, një komandë secila)
+ollama pull nomic-embed-text   # embedimet (default; ndrysho me ARK_EMB)
+ollama pull qwen3:4b           # modeli bisedues (default ARK_LLM; çdo model lokal punon)
+
+# 1) korpusi: vendos skedarët (tekst ose PDF) te korpus/ (deshi NUK është në repo)
+mkdir -p korpus && cp skedaret/* korpus/
+
+# 2) indekson + shkruan raportin “çka kuptova e çka jo”
+#    dështon me zë (exit ≠ 0) nëse endpoint-i i embedimeve bie ose kthen vektor bosh
+python3 app/arkivi.py gelltit
+
+# 3) UI: http://127.0.0.1:8903 — ekzekuton edhe lakun agjentik të gëlltitjes
+#    (vezhgo → vendos → indekso → raporto, progres live për dokument)
+python3 app/ui.py
 ```
-Varësitë: `pdftotext` (PDF-të), `ollama` me `nomic-embed-text` dhe `qwen3.8-liruar:latest`.
+Varësitë: `pdftotext` (PDF-të), `ollama` me `nomic-embed-text` dhe një model
+bisedues lokal (default `qwen3:4b`; ndrysho me variablin `ARK_LLM`).
+
+**Shënim korpusi:** korpusi i 50 dokumenteve adversar (përdorur për rezultatet
+e matura) **nuk** është në këtë repo — është artikull privat vlerësimi, i
+mbajtur me `MANIFEST.sha256` (verifikim me hash). `korpus-test/` ka një korpus
+ të vogël 6-skedarësh që ta provosh pipeline-in menjëherë.
 
 ## Korpusi i vërtët (i verifikuar)
 `korpus/` = 50 dokumente · 42 txt, 4 md, 3 PDF · shqip + një gjermanisht.

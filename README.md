@@ -31,13 +31,29 @@ This system makes the trust boundary part of the product:
 ## Quick start (a stranger, under 10 minutes)
 
 ```bash
-# 1) put your documents (text or PDF) into korpus/
-python3 app/arkivi.py gelltit   # ingest: index + report what was/wasn't understood
-python3 app/ui.py               # UI at http://127.0.0.1:8903
+# 0) download the two local models once (both public, one command each)
+ollama pull nomic-embed-text   # embeddings (default; override with ARK_EMB)
+ollama pull qwen3:4b           # chat model (default ARK_LLM; any local chat model works)
+
+# 1) put your documents (text or PDF) into korpus/ (the folder is NOT in the repo)
+mkdir -p korpus && cp your-documents/* korpus/
+
+# 2) ingest: index + report what was/wasn't understood
+#    fails loudly (non-zero exit) if the embeddings endpoint is down or returns empty vectors
+python3 app/arkivi.py gelltit
+
+# 3) UI at http://127.0.0.1:8903 — also runs the visible agentic ingestion loop
+#    (observe → decide → index → report, live per-document progress)
+python3 app/ui.py
 ```
 
 Dependencies: `pdftotext` (for PDFs), `ollama` with `nomic-embed-text` and a
-local chat model.
+local chat model (default `qwen3:4b`; change with the `ARK_LLM` env var).
+
+**Corpus note:** the 50-document adversarial corpus used for the measured
+results is **not** in this repo (it is a private evaluation artifact, kept
+with its `MANIFEST.sha256` hash verification). `korpus-test/` holds a small
+6-file test corpus so you can try the full pipeline immediately.
 
 ## How it works
 
