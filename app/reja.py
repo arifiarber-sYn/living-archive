@@ -18,7 +18,9 @@ INDEKS = BASE / 'indeksi' / 'reja.json'
 KOSTO = BASE / 'indeksi' / 'reja-kosto.json'
 URL = 'https://api.tokenfactory.nebius.com/v1'
 EMB = os.environ.get('ARK_EMB_REJA', 'Qwen/Qwen3-Embedding-8B')
-LLM = os.environ.get('ARK_LLM_REJA', 'nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B')
+# Parazgjedhja kaloi ne Super (12.10.2026): i matur 8/8 ne harness, me i lirе per pyetje
+# (0.000041 kundrejt 0.000057 per Nano) sepse pergjigjet jane me te shkurtra. Nano mbetet me ARK_LLM_REJA.
+LLM = os.environ.get('ARK_LLM_REJA', 'nvidia/nemotron-3-super-120b-a12b')
 TOPK = int(os.environ.get('ARK_TOPK', '5'))
 # Kalibrimi (12.10.2026, app/kalibrim.py) dha ndarje te ngushte: 0.3733 (pa mbulim) vs 0.3736 (me mbulim).
 # Nje prag i vetem absolut luhate (flapping) — pra s'vendoset mbi te gjithe pergjigjen.

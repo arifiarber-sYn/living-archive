@@ -1,0 +1,104 @@
+{
+  "koha": "2026-10-12T17:05:18+00:00",
+  "motor": "reja",
+  "modeli": "nvidia/nemotron-3-super-120b-a12b",
+  "emb": "Qwen/Qwen3-Embedding-8B",
+  "pyetje": 8,
+  "sakte": 8,
+  "sakte_pct": 100.0,
+  "latence_p50_s": 1.909,
+  "kosto_totale_usd": 0.00032904,
+  "kosto_mesatare_usd": 4.113e-05,
+  "rreshtat": [
+    {
+      "id": "b1",
+      "pyetja": "Sa eshte buxheti total i miratuar per vitin 2027?",
+      "ok": true,
+      "arsyeja": "ok",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 5.334e-05,
+      "sekonda": 1.32,
+      "pergjigja": "142,500,000 euro [vendim-buxheti-0]"
+    },
+    {
+      "id": "b2",
+      "pyetja": "Sa euro ndahen per arsim parauniversitar?",
+      "ok": true,
+      "arsyeja": "ok",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 5.262e-05,
+      "sekonda": 1.459,
+      "pergjigja": "18,300,000 euro [vendim-buxheti-0]"
+    },
+    {
+      "id": "b3",
+      "pyetja": "Kur fillon procedura e prokurimit per punimet rrugore?",
+      "ok": true,
+      "arsyeja": "ok",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 5.67e-05,
+      "sekonda": 2.25,
+      "pergjigja": "Procedura e prokurimit per punimet rrugore fillon me 01.02.2027 [vendim-buxheti-0]"
+    },
+    {
+      "id": "b4",
+      "pyetja": "Sa zgjat procedura e prokurimit per punimet rrugore?",
+      "ok": true,
+      "arsyeja": "ok",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 5.958e-05,
+      "sekonda": 3.191,
+      "pergjigja": "Procedura e prokurimit per punimet rrugore fillon me 01.02.2027 dhe perfundon brenda 90 diteve. [vendim-buxheti-0]"
+    },
+    {
+      "id": "b5",
+      "pyetja": "Kush e miratoi buxhetin dhe me cilin numer vendimi?",
+      "ok": true,
+      "arsyeja": "ok",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 5.724e-05,
+      "sekonda": 2.824,
+      "pergjigja": "Komuna e Prishtines miraton buxhetin me numri i vendimit Nr. 2026/118 [vendim-buxheti-0]"
+    },
+    {
+      "id": "j1",
+      "pyetja": "Kush fitoi Kupen e Botes 2010?",
+      "ok": true,
+      "arsyeja": "refuzoi",
+      "citime": [],
+      "kosto_usd": 0.0,
+      "sekonda": 1.568,
+      "pergjigja": "S'E DI"
+    },
+    {
+      "id": "j2",
+      "pyetja": "Sa kushton bileta e trenit ne Japoni?",
+      "ok": true,
+      "arsyeja": "refuzoi",
+      "citime": [],
+      "kosto_usd": 0.0,
+      "sekonda": 0.949,
+      "pergjigja": "S'E DI"
+    },
+    {
+      "id": "j3",
+      "pyetja": "Kush e shkroi romanin Lumi i vdekur?",
+      "ok": true,
+      "arsyeja": "refuzoi",
+      "citime": [],
+      "kosto_usd": 4.956e-05,
+      "sekonda": 2.278,
+      "pergjigja": "S'E DI [s'e di]"
+    }
+  ]
+}
