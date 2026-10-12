@@ -71,6 +71,33 @@ def gen(prompt, npred=400, timeout=180):
             int(u.get('prompt_tokens', 0)), int(u.get('completion_tokens', 0)))
 
 
+def _numrat(t):
+    """Numrat e permbajtur ne tekst, te normalizuar (142,500,000 -> 142500000)."""
+    return {x.replace(',', '').replace('.', '') for x in re.findall(r'\d[\d.,]{2,}', t)}
+
+
+def atribuo_citime(teksti, gjetjet, citime_modelit):
+    """Cilat fragmente e MBAJNE pergjigjen — e llogaritur nga teksti, jo e deklaruar nga modeli.
+
+    Rregulli: fragmenti mban pergjigjen nese permban te gjithe numrat qe shfaqen ne te,
+    ose nese modeli e ka cituar dhe citimi eshte i vertetueshem.
+    Kthen ([id], 'llogaritur'|'modeli') ose ([], arsyeja).
+    """
+    id_te_gjetura = {g['id'] for g in gjetjet}
+    te_vlefshme = [c for c in citime_modelit if c in id_te_gjetura]
+    numrat = _numrat(teksti)
+    mban = []
+    for g in gjetjet:
+        teksti_g = _numrat(g['teksti'])
+        if numrat and numrat.issubset(teksti_g):
+            mban.append(g['id'])
+    if mban:
+        return sorted(set(mban) | set(te_vlefshme)), 'llogaritur'
+    if te_vlefshme:
+        return sorted(set(te_vlefshme)), 'modeli'
+    return [], 'pa baze ne fragmentet e gjetura'
+
+
 def cosine(a, b):
     num = sum(x * y for x, y in zip(a, b))
     na = sum(x * x for x in a) ** 0.5
@@ -145,25 +172,27 @@ def pergjigju(pyetja, k=TOPK):
                 'njesi': [g['id'] for g in gjetjet]}
     kontekst = chr(10).join('[%s] %s' % (g['id'], g['teksti'][:1200]) for g in gjetjet)
     prompt = ('Pergjigju VETEM nga fragmentet e arkivit me poshte, ne shqip. '
-              'Cdo pohim duhet te mbaje id-ne ne kllapa katrore, p.sh. [vendim-3]. '
+              'Cdo pohim duhet te mbyllet me id-ne e fragmentit NE KLLAPA KATRORE, '
+              'p.sh. nese id-ja eshte vendim-buxheti-0, shkruaj: ... 142,500,000 euro [vendim-buxheti-0]. '
+              'MOS e shkruaj pergjigjen pa kllapa. '
               'Nese fragmentet nuk e mbulojne pyetjen, pergjigju saktesisht: S\'E DI' + chr(10) + chr(10)
               + 'Arkivi:' + chr(10) + kontekst + chr(10) + chr(10) + 'Pyetja: ' + pyetja)
     tekst, hyr, dal = gen(prompt)
     dt = time.perf_counter() - t0
-    id_te_gjetura = {g['id'] for g in gjetjet}
-    citime = sorted(set(re.findall(r'\[([^\]]{1,40})\]', tekst)))
-    # shtresa 2: citimi duhet te tregoje nje fragment te GJTUR. Pa te, pergjigja s'mbahet.
-    te_vertetueshme = [c for c in citime if c in id_te_gjetura]
+    citime_modelit = sorted(set(re.findall(r'\[([^\]]{1,40})\]', tekst)))
+    # shtresa 2: citimi LLOGARITET nga permbajtja; deklarata e modelit pranohet vetem nese vertetohet.
+    citime, burimi_i_citimit = atribuo_citime(tekst, gjetjet, citime_modelit)
     refuzim = "s'e di" in tekst.strip().lower()[:40]
     kosto = hyr / 1e6 * CMIM_HYR + dal / 1e6 * CMIM_DAL
     _shto_kosto(hyr, dal, kosto)
     arsyeja = ''
-    if not refuzim and not te_vertetueshme:
+    if not refuzim and not citime:
         # pa citim qe tregon nje fragment te gjetur -> nuk mbahet
         arsyet = refuzim = True
         arsyeja = 'pergjigje pa citim te verifikueshem'
         tekst = "S'E DI"
     return {'pyetja': pyetja, 'pergjigja': tekst.strip(), 'citime': citime, 'arsyeja': arsyeja,
+            'citime_nga': burimi_i_citimit if not arsyeja else '',
             'refuzim': refuzim, 'sekonda': round(dt, 3), 'kosto_usd': round(kosto, 8),
             'token_hyr': hyr, 'token_dal': dal, 'njesi': [g['id'] for g in gjetjet],
             'skoret': [round(g['skor'], 4) for g in gjetjet[:3]]}

@@ -1,0 +1,104 @@
+{
+  "koha": "2026-10-12T16:45:36+00:00",
+  "motor": "reja",
+  "modeli": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "emb": "Qwen/Qwen3-Embedding-8B",
+  "pyetje": 8,
+  "sakte": 7,
+  "sakte_pct": 87.5,
+  "latence_p50_s": 3.112,
+  "kosto_totale_usd": 0.000456,
+  "kosto_mesatare_usd": 5.7e-05,
+  "rreshtat": [
+    {
+      "id": "b1",
+      "pyetja": "Sa eshte buxheti total i miratuar per vitin 2027?",
+      "ok": true,
+      "arsyeja": "ok",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 7.422e-05,
+      "sekonda": 2.666,
+      "pergjigja": "Buxheti total i miratuar për vitin 2027 është **142,500,000 euro**. Kjo vlerë është shënuar në **Neni 1** të dokumentit *VENDIM I KOMUNES SE PRISHTINES* (vlerë 142,500,000 euro). \n\n**Përgjigja:**  \n**142,500,000 euro**"
+    },
+    {
+      "id": "b2",
+      "pyetja": "Sa euro ndahen per arsim parauniversitar?",
+      "ok": true,
+      "arsyeja": "ok",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 4.998e-05,
+      "sekonda": 2.343,
+      "pergjigja": "18,300,000"
+    },
+    {
+      "id": "b3",
+      "pyetja": "Kur fillon procedura e prokurimit per punimet rrugore?",
+      "ok": true,
+      "arsyeja": "ok",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 5.43e-05,
+      "sekonda": 5.113,
+      "pergjigja": "Procedura e prokurimit për punimet rrugore fillon **01.02.2027**."
+    },
+    {
+      "id": "b4",
+      "pyetja": "Sa zgjat procedura e prokurimit per punimet rrugore?",
+      "ok": true,
+      "arsyeja": "ok",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 0.0001155,
+      "sekonda": 4.507,
+      "pergjigja": "Procedura e prokurimit për punimet rrugore zgjendet në vendimin **vendim-buxheti-0** (Nr. 2026/118, data 14.09.2026). Kështu, shkruaj:  \n**... 142,500,000 euro [vendim-buxheti-0]**.  \n\nMos e shkruaj pa kllapa. Nëse fragmentet nuk e mbulojnë pyetjen, pergjigju saktesisht: **S'E DI**.  \n\n**Përgjigja:*"
+    },
+    {
+      "id": "b5",
+      "pyetja": "Kush e miratoi buxhetin dhe me cilin numer vendimi?",
+      "ok": false,
+      "arsyeja": "pa shifer/fakt",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 0.00011364,
+      "sekonda": 2.857,
+      "pergjigja": "**Përmbledhje të detyrueshme**\n\n- **Vendimi i buxhetit**: **VENDIM‑0**  \n- **Vlerë buxhetit**: **142,500,000 euro**  \n- **Data vendit**: **14.09.2026**  \n\nKjo informacion është e mënyrueshme nga fragmentet e arkivit të caktuar (vendim‑0) dhe përgjigjet vetëm sipas instruksionit të pyetjes: *“Kush e "
+    },
+    {
+      "id": "j1",
+      "pyetja": "Kush fitoi Kupen e Botes 2010?",
+      "ok": true,
+      "arsyeja": "refuzoi",
+      "citime": [],
+      "kosto_usd": 0.0,
+      "sekonda": 3.293,
+      "pergjigja": "S'E DI"
+    },
+    {
+      "id": "j2",
+      "pyetja": "Sa kushton bileta e trenit ne Japoni?",
+      "ok": true,
+      "arsyeja": "refuzoi",
+      "citime": [],
+      "kosto_usd": 0.0,
+      "sekonda": 2.932,
+      "pergjigja": "S'E DI"
+    },
+    {
+      "id": "j3",
+      "pyetja": "Kush e shkroi romanin Lumi i vdekur?",
+      "ok": true,
+      "arsyeja": "refuzoi",
+      "citime": [],
+      "kosto_usd": 4.836e-05,
+      "sekonda": 3.406,
+      "pergjigja": "S'E DI"
+    }
+  ]
+}

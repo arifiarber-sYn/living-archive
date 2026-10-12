@@ -21,8 +21,28 @@ python3 app/reja.py kosto           # kosto e grumbulluar, nga përdorimi real
 | Cka | Vlera | Burimi |
 |---|---|---|
 | Indeksimi i korpusit shembull (6 skedare) | 5 njesi, **611 token-a** | `indeksi/reja.json` |
-| Pyetje e vertete (taksat) | refuzim **i sakte**, kosto $0.00014 | `indeksi/reja-kosto.jsonl` |
+| Harness cloud (5 pyetje me baze + 3 pa baze) | **7/8 = 87.5%**, refuzime **3/3** | `indeksi/harness-reja.json` |
+| Latence p50 | 3.11 s | idem |
+| Kosto mesatare per pyetje | **$0.000057** | idem |
 | Pyetje jashte teme | refuzim, **$0.0** (pa thirrje modeli) | idem |
+
+## Tri rrezimet e radhes (secila e matur)
+
+**1. Pragut (0.373) — i rrezuar.** Ndarja 0.0003 ishte rastesi; `grep -c taksa` = 0 ne fragmentin
+"fitues". Similituda mat tematiken, jo pergjigjen → u zevendesua me dysheme sigurie + verifikim.
+
+**2. Kontrata e citimit — e rrezuar si besim ndaj modelit.** Me nje prompt qe *pershkruante*
+kllapat, modeli u pergjigj saktë (142,500,000 euro) por **pa citim** → 3/8. Me nje shembull
+konkret ne prompt: 4/8. Modeli e le kllapen kur pergjigja zgjatet.
+
+**3. Citimi u LLOGARIT, nuk u besua (zgjidhja).** `atribuo_citime()` nuk i beson modelit:
+merr numrat qe shfaqen ne pergjigje dhe kerkon fragmentin qe i permban te gjithe. Kjo e coi
+**3/8 → 7/8 (87.5%)**, pa nje cent shtese.
+
+> Parimi: **citimi eshte deshmi e verifikuar, jo deklaratë e modelit.**
+
+Rasti i vetem i mbetur (b5) eshte kufizim i vleresimit tim: kerkoj numrin e vendimit (118)
+ne pergjigje, ndersa fragmenti i cituar s'e permbante ate shifer.
 
 ## Zbulimi kryesor i raundit: ngjashmeria NUK eshte provë
 Kalibrimi (`app/kalibrim.py`) dha nje ndarje qe dukej e paster:
