@@ -46,6 +46,23 @@ me rrezik fabrikimi te matur. Nuk rekomandohet.
 3. Reranker i vertete: katalogu NUK ka model rerank te dedikuar; alternativa = LLM-rerank mbi 20 kandidate me Nano perpara pergjigjes me Super.
 4. Korpus me i madh per kalibrimin - 8 pyetje s'jane baze per nje prag refuzimi.
 
-## 5. Cka NUK u verifikua
+## 5. Rrunda e dyte - tre avansime te provuara (19:30-20:20)
+
+### 5.1 Reranker me LLM (Nano mbi 20 kandidate) - I RREZUAR
+Retrieval semantik 20 kandidate -> Nano zgjedh 6 -> Super pergjigjet. Rezultati mbi arkiven private (12 pyetje):
+**10/12 (83.3%) - SAKTE SIKUR pa reranker**. Te njejtat dy deshtime (p05, p08). Kosto e njejte, p50 2.43s
+kundrejt 3.93s (luhate, jo perfitim i provuar). **Vendim: RERANK i fikur si parazgjedhje** (`src/know.py`).
+Kjo eshte hipoteza e katert e rrezuar me numra, pas RRF-se, pragut absolut dhe kontrates se citimit.
+
+### 5.2 Cmimi i input-it te cache-uar - I PAMATSHEM
+Katalogu ekspozon `input_cached_price_per_million_tokens`, por pergjigja e API-t kthen
+`prompt_tokens_details: None` ne te dyja thirrjet (i njejti prefiks 2,819 token-a, dy here radhazi).
+Pa detaje te cache-it ne pergjigje, zbritja **nuk matet** -> nuk pretendohet.
+
+### 5.3 Konfirmim i pavarur i zgjedhjes se modelit
+Toka: ky dokument (krahasimi Nano/Lightning/Super) + ri-xhirimi i dy harness-eve pas kalimit ne Super:
+cloud **8/8**, arkiva private **10/12** - te dyja here me te larta se Nano dhe me kosto me te ulet per pyetje.
+
+## 6. Cka NUK u verifikua
 - Faqja e Devpost-it kthen 403 ndaj klientit tone -> kushtet e cmimit Tavily 3k mbeten te palexuara nga burimi primar.
 - Katalogu jep cmime, jo kufizime normash; kuotat e Token Factory nuk u kontrolluan.
