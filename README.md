@@ -83,12 +83,49 @@ questions with no answer in the corpus.
   0.45 → 0.35 did **not** reduce wrong refusals (they come from the model's
   judgment over fragments, not the threshold) — change reverted, documented.
 
+## Cloud engine (REJA) — same promise, Nebius Token Factory
+
+The archive runs on two engines. The local one (Ollama) stays the default: private, $0, offline.
+The cloud one (`app/reja.py`) sends retrieval and generation to **Nebius Token Factory** —
+embeddings `Qwen/Qwen3-Embedding-8B`, answers `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B` —
+for larger archives and faster answers.
+
+```bash
+export NEBIUS_API_KEY=***        # or a local vault file (0600)
+export ARK_ENGINE=reja
+make gelltit && make pyet Q="Cilat jane taksat vjetore te biznesit per 2026?"
+```
+
+**Same promise, enforced twice.** Refusal is not a threshold alone:
+
+1. a **safety floor** — below it the system refuses *before* calling the model (**$0.0**);
+2. **the citation is computed, not trusted** — `atribuo_citime()` takes the numbers that appear
+   in the answer and requires a retrieved fragment to contain all of them. A fluent answer
+   without evidence is discarded and `S'E DI` is returned.
+
+Measured on the sample corpus (`indeksi/harness-reja.json`):
+
+| Metric | Value |
+|---|---|
+| Questions answered with a verifiable citation | **7/8 (87.5%)** |
+| Trap questions correctly refused | **3/3** |
+| Latency p50 | 3.11 s |
+| Cost per question | **$0.000057** |
+
+Three hypotheses were tested and **rejected** before reaching that number; all are documented
+in `docs/REJA.md`: an absolute similarity threshold (0.373 — the "clean" separation was an
+artifact: the winning fragment contained no tax figure at all), a citation contract *described*
+in words (the model drops brackets on longer answers), and trusting the model's own citations.
 ## Repository layout
 
 - `app/arkivi.py` — ingestion, retrieval, citation-grounded answering, feedback boosts
 - `app/agjenti.py` — the visible agentic ingestion loop (observe → decide → index → report)
 - `app/harness.py` — self-evaluation harness
 - `app/ui.py` — minimal async UI (citations clickable, feedback buttons, live stats)
+- `app/reja.py` — **cloud engine**: Token Factory (Qwen3-Embedding-8B + NVIDIA Nemotron), two-layer refusal
+- `app/harness_reja.py` — cloud self-harness (`make harness` with `ARK_ENGINE=reja`)
+- `app/kalibrim.py` — threshold calibration tool (used, then rejected on evidence — see `docs/REJA.md`)
+- `docs/REJA.md` — cloud engine, its numbers, and its three rejected hypotheses
 - `indeksi/harness.json` — harness questions + measured results
 - `korpus-test/` — small test corpus
 - `video-demo.mp4` — 47-second demo (Albanian; EN version planned)
