@@ -3,3 +3,7 @@ __pycache__/
 korpus/
 indeksi/indeksi.json
 indeksi/vleresimet.jsonl
+korpus/
+indeksi/reja.json
+indeksi/reja-kosto.jsonl
+__pycache__/
