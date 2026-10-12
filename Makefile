@@ -29,3 +29,6 @@ kosto:
 
 ui:
 	python3 app/ui.py
+
+demo-reja:
+	python3 app/demo_reja.py
