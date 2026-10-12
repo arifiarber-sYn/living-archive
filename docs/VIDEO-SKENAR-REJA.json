@@ -1,0 +1,62 @@
+{
+  "titulli": "The Living Archive — answers with evidence, or says I don't know",
+  "nentitulli": "Nebius × NVIDIA Global AI Hackathon · Personal AI",
+  "gjuha": "en",
+  "zeri": "en_US-lessac-high",
+  "fps": 10,
+  "gjeresia": 1280,
+  "lartesia": 720,
+  "max_sek": 180,
+  "_lexo": "30/90/30/30. `terminal` xhiron komandat vërtet; `karte` = titull + rreshta. Transparenca (D-199 var. 3) nuk ndryshohet.",
+  "blloqet": [
+    {
+      "id": "problemi",
+      "sek": 30,
+      "lloji": "karte",
+      "titulli": "The problem",
+      "rreshtat": [
+        "Small institutions sit on hundreds of documents nobody can search",
+        "They cannot afford an AI that invents answers — in an institution, a confident fabrication is worse than 'I don't know'",
+        "And the archive is private: it must not leave the building"
+      ],
+      "narracioni": "Small institutions sit on hundreds of documents nobody can search. They cannot afford an AI that invents answers. In an institutional context, a confident fabrication is worse than saying: I don't know. And their documents must not leave the building."
+    },
+    {
+      "id": "demo",
+      "sek": 90,
+      "lloji": "terminal",
+      "cwd": "/home/kllosha/living-archive-merge",
+      "komandat": [
+        "make pyet ENGINE=reja Q=\"Sa euro ndahen per arsim parauniversitar?\"",
+        "make pyet ENGINE=reja Q=\"Kush fitoi Kupen e Botes 2010?\"",
+        "sed -n '1,30p' app/reja.py",
+        "echo $ARK_ENGINE"
+      ],
+      "narracioni": "One archive, two engines. On this machine, retrieval and generation run through Nebius Token Factory: Qwen3-Embedding-8B builds the index, and the NVIDIA Nemotron model writes the answer — it is on the critical path, not a decorative call. The answer cites the fragment it came from, and the citation is verified by the system, not trusted from the model. Now a question the archive cannot answer: it refuses before calling the model at all. Zero cost, zero fabrication. The same archive also runs fully local, with Ollama, when the documents must never leave the building."
+    },
+    {
+      "id": "numrat",
+      "sek": 30,
+      "lloji": "terminal",
+      "cwd": "/home/kllosha/living-archive-merge",
+      "komandat": [
+        "cat indeksi/harness-reja.json",
+        "make kosto"
+      ],
+      "narracioni": "Every number was measured, not estimated, and every one traces to a file in the repository. Seven of eight questions answered with a verifiable citation; three out of three trap questions correctly refused; three point one seconds per question; five point seven hundred-thousandths of a dollar per question. Three ideas we tried before this made things worse, and they are still in the repository, with their numbers."
+    },
+    {
+      "id": "transparenca",
+      "sek": 30,
+      "lloji": "karte",
+      "titulli": "Transparency",
+      "rreshtat": [
+        "Built by one developer and his AI agent — the human sets direction and judges quality; the agent designs, builds and measures",
+        "",
+        "github.com/arifiarber-sYn/living-archive · MIT",
+        "Not claimed: no hosting, no fine-tuning, and the sample corpus is small"
+      ],
+      "narracioni": "Built by one developer and his AI agent. The human sets direction and judges quality; the agent designs, builds and measures. Every number you heard is in the repository, with timestamps — including the results that made things worse."
+    }
+  ]
+}
