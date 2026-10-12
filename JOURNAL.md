@@ -18,6 +18,9 @@
 | 18:51 | 180-second video scenario for the unified archive, 0 placeholders | `docs/VIDEO-SKENAR-REJA.json` |
 | 18:52 | **Recording proof run**: 59.8 s, h264 + aac, `ok: true` | `/tmp/prova-reja.mp4` |
 | 18:56 | Runtime cost file removed from git (it grows with every call; reproducible from usage) | commit `6fce7ff` |
+| 19:00 | Pricing verified against the official catalog: our `COSTS.md` figures are **correct** | `docs/HULUMTIMI-12-10.md` |
+| 19:01 | **Model comparison on the same harness**: Super **8/8**, Nano 7/8, Lightning **3/8 + 1 fabrication** | `krahasimi-modele/` |
+| 19:05 | Default switched to Super; both harnesses re-run: cloud **8/8**, private archive **10/12** | commits `43092f2`, `87a4092` |
 
 ## What was rejected (kept on purpose)
 

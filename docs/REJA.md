@@ -21,9 +21,17 @@ python3 app/reja.py kosto           # kosto e grumbulluar, nga përdorimi real
 | Cka | Vlera | Burimi |
 |---|---|---|
 | Indeksimi i korpusit shembull (6 skedare) | 5 njesi, **611 token-a** | `indeksi/reja.json` |
-| Harness cloud (5 pyetje me baze + 3 pa baze) | **7/8 = 87.5%**, refuzime **3/3** | `indeksi/harness-reja.json` |
-| Latence p50 | 3.11 s | idem |
-| Kosto mesatare per pyetje | **$0.000057** | idem |
+| Harness cloud (5 pyetje me baze + 3 pa baze) | **8/8 = 100%**, refuzime **3/3** | `indeksi/harness-reja.json` |
+| Latence p50 | **1.91 s** | idem |
+| Kosto mesatare per pyetje | **$0.000041** | idem |
+
+> **Parazgjedhja kaloi ne `nvidia/nemotron-3-super-120b-a12b` (12.10.2026)**, pas krahasimit:
+> Super **8/8**, Nano 7/8, Lightning **3/8 me nje fabrikim**. Super, edhe pse 5x me i shtrenjte per
+> token, doli **me i lirе per pyetje** se Nano (pergjigje me te shkurtra). Krahasimi i plote:
+> `docs/HULUMTIMI-12-10.md` + `krahasimi-modele/`.
+>
+> Numrat e meparshem (Nano): 7/8, p50 3.11 s, $0.000057/pyetje — te ruajtura ne
+> `krahasimi-modele/nano.json`.
 | Pyetje jashte teme | refuzim, **$0.0** (pa thirrje modeli) | idem |
 
 ## Tri rrezimet e radhes (secila e matur)
