@@ -1,14 +1,14 @@
 {
-  "koha": "2026-10-12T16:45:36+00:00",
+  "koha": "2026-10-12T17:01:18+00:00",
   "motor": "reja",
-  "modeli": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "modeli": "nvidia/nemotron-3-super-120b-a12b",
   "emb": "Qwen/Qwen3-Embedding-8B",
   "pyetje": 8,
-  "sakte": 7,
-  "sakte_pct": 87.5,
-  "latence_p50_s": 3.112,
-  "kosto_totale_usd": 0.000456,
-  "kosto_mesatare_usd": 5.7e-05,
+  "sakte": 8,
+  "sakte_pct": 100.0,
+  "latence_p50_s": 6.157,
+  "kosto_totale_usd": 0.00032832,
+  "kosto_mesatare_usd": 4.104e-05,
   "rreshtat": [
     {
       "id": "b1",
@@ -18,9 +18,9 @@
       "citime": [
         "vendim-buxheti-0"
       ],
-      "kosto_usd": 7.422e-05,
-      "sekonda": 2.666,
-      "pergjigja": "Buxheti total i miratuar për vitin 2027 është **142,500,000 euro**. Kjo vlerë është shënuar në **Neni 1** të dokumentit *VENDIM I KOMUNES SE PRISHTINES* (vlerë 142,500,000 euro). \n\n**Përgjigja:**  \n**142,500,000 euro**"
+      "kosto_usd": 5.334e-05,
+      "sekonda": 6.389,
+      "pergjigja": "142,500,000 euro [vendim-buxheti-0]"
     },
     {
       "id": "b2",
@@ -30,9 +30,9 @@
       "citime": [
         "vendim-buxheti-0"
       ],
-      "kosto_usd": 4.998e-05,
-      "sekonda": 2.343,
-      "pergjigja": "18,300,000"
+      "kosto_usd": 5.262e-05,
+      "sekonda": 6.287,
+      "pergjigja": "18,300,000 euro [vendim-buxheti-0]"
     },
     {
       "id": "b3",
@@ -42,9 +42,9 @@
       "citime": [
         "vendim-buxheti-0"
       ],
-      "kosto_usd": 5.43e-05,
-      "sekonda": 5.113,
-      "pergjigja": "Procedura e prokurimit për punimet rrugore fillon **01.02.2027**."
+      "kosto_usd": 5.67e-05,
+      "sekonda": 4.475,
+      "pergjigja": "Procedura e prokurimit per punimet rrugore fillon me 01.02.2027 [vendim-buxheti-0]"
     },
     {
       "id": "b4",
@@ -54,21 +54,21 @@
       "citime": [
         "vendim-buxheti-0"
       ],
-      "kosto_usd": 0.0001155,
-      "sekonda": 4.507,
-      "pergjigja": "Procedura e prokurimit për punimet rrugore zgjendet në vendimin **vendim-buxheti-0** (Nr. 2026/118, data 14.09.2026). Kështu, shkruaj:  \n**... 142,500,000 euro [vendim-buxheti-0]**.  \n\nMos e shkruaj pa kllapa. Nëse fragmentet nuk e mbulojnë pyetjen, pergjigju saktesisht: **S'E DI**.  \n\n**Përgjigja:*"
+      "kosto_usd": 5.958e-05,
+      "sekonda": 8.82,
+      "pergjigja": "Procedura e prokurimit per punimet rrugore fillon me 01.02.2027 dhe perfundon brenda 90 diteve. [vendim-buxheti-0]"
     },
     {
       "id": "b5",
       "pyetja": "Kush e miratoi buxhetin dhe me cilin numer vendimi?",
-      "ok": false,
-      "arsyeja": "pa shifer/fakt",
+      "ok": true,
+      "arsyeja": "ok",
       "citime": [
         "vendim-buxheti-0"
       ],
-      "kosto_usd": 0.00011364,
-      "sekonda": 2.857,
-      "pergjigja": "**Përmbledhje të detyrueshme**\n\n- **Vendimi i buxhetit**: **VENDIM‑0**  \n- **Vlerë buxhetit**: **142,500,000 euro**  \n- **Data vendit**: **14.09.2026**  \n\nKjo informacion është e mënyrueshme nga fragmentet e arkivit të caktuar (vendim‑0) dhe përgjigjet vetëm sipas instruksionit të pyetjes: *“Kush e "
+      "kosto_usd": 5.652e-05,
+      "sekonda": 1.805,
+      "pergjigja": "Komuna e Prishtines miraton buxhetin me vendimin Nr. 2026/118 [vendim-buxheti-0]"
     },
     {
       "id": "j1",
@@ -77,7 +77,7 @@
       "arsyeja": "refuzoi",
       "citime": [],
       "kosto_usd": 0.0,
-      "sekonda": 3.293,
+      "sekonda": 7.704,
       "pergjigja": "S'E DI"
     },
     {
@@ -87,7 +87,7 @@
       "arsyeja": "refuzoi",
       "citime": [],
       "kosto_usd": 0.0,
-      "sekonda": 2.932,
+      "sekonda": 6.028,
       "pergjigja": "S'E DI"
     },
     {
@@ -96,9 +96,9 @@
       "ok": true,
       "arsyeja": "refuzoi",
       "citime": [],
-      "kosto_usd": 4.836e-05,
-      "sekonda": 3.406,
-      "pergjigja": "S'E DI"
+      "kosto_usd": 4.956e-05,
+      "sekonda": 3.242,
+      "pergjigja": "S'E DI [s'e di]"
     }
   ]
 }

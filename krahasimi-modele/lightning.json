@@ -1,0 +1,106 @@
+{
+  "koha": "2026-10-12T17:00:33+00:00",
+  "motor": "reja",
+  "modeli": "nvidia/Nemotron-3_5-Lightning",
+  "emb": "Qwen/Qwen3-Embedding-8B",
+  "pyetje": 8,
+  "sakte": 3,
+  "sakte_pct": 37.5,
+  "latence_p50_s": 4.451,
+  "kosto_totale_usd": 0.00032208,
+  "kosto_mesatare_usd": 4.026e-05,
+  "rreshtat": [
+    {
+      "id": "b1",
+      "pyetja": "Sa eshte buxheti total i miratuar per vitin 2027?",
+      "ok": true,
+      "arsyeja": "ok",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 5.334e-05,
+      "sekonda": 1.684,
+      "pergjigja": "142,500,000 euro [vendim-buxheti-0]"
+    },
+    {
+      "id": "b2",
+      "pyetja": "Sa euro ndahen per arsim parauniversitar?",
+      "ok": false,
+      "arsyeja": "pa shifer/fakt",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 5.358e-05,
+      "sekonda": 1.105,
+      "pergjigja": "... 142,500,000 euro [vendim-buxheti-0]. MOS"
+    },
+    {
+      "id": "b3",
+      "pyetja": "Kur fillon procedura e prokurimit per punimet rrugore?",
+      "ok": false,
+      "arsyeja": "pa shifer/fakt",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 5.382e-05,
+      "sekonda": 5.66,
+      "pergjigja": "... 142,500,000 euro [vendim-buxheti-0]. MOS"
+    },
+    {
+      "id": "b4",
+      "pyetja": "Sa zgjat procedura e prokurimit per punimet rrugore?",
+      "ok": false,
+      "arsyeja": "pa shifer/fakt",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 5.382e-05,
+      "sekonda": 6.614,
+      "pergjigja": "... 142,500,000 euro [vendim-buxheti-0]. MOS"
+    },
+    {
+      "id": "b5",
+      "pyetja": "Kush e miratoi buxhetin dhe me cilin numer vendimi?",
+      "ok": false,
+      "arsyeja": "pa shifer/fakt",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 5.388e-05,
+      "sekonda": 4.124,
+      "pergjigja": "... 142,500,000 euro [vendim-buxheti-0]. MOS"
+    },
+    {
+      "id": "j1",
+      "pyetja": "Kush fitoi Kupen e Botes 2010?",
+      "ok": true,
+      "arsyeja": "refuzoi",
+      "citime": [],
+      "kosto_usd": 0.0,
+      "sekonda": 2.348,
+      "pergjigja": "S'E DI"
+    },
+    {
+      "id": "j2",
+      "pyetja": "Sa kushton bileta e trenit ne Japoni?",
+      "ok": true,
+      "arsyeja": "refuzoi",
+      "citime": [],
+      "kosto_usd": 0.0,
+      "sekonda": 8.095,
+      "pergjigja": "S'E DI"
+    },
+    {
+      "id": "j3",
+      "pyetja": "Kush e shkroi romanin Lumi i vdekur?",
+      "ok": false,
+      "arsyeja": "U PERGJIGJ pa baze",
+      "citime": [
+        "vendim-buxheti-0"
+      ],
+      "kosto_usd": 5.364e-05,
+      "sekonda": 4.779,
+      "pergjigja": "... 142,500,000 euro [vendim-buxheti-0]. MOS"
+    }
+  ]
+}
