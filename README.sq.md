@@ -35,6 +35,33 @@ Burimi: `MANIFEST.sha256` (hash i verifikuar + kontroll skedar-për-skedar) + `L
 Përmban **qëllimisht** raste të vështira: skedar bosh, dyfishime, procesverbale që kundërshtojnë, gjuhë tjetër.
 Korpus i pastër demoje: komunë **fiktive** (asnjë entitet real) + artikuj Wikipedia (CC BY-SA).
 
+## Motori REJA — i njejti premtim, Nebius Token Factory
+
+Arkivi punon me dy motorë. Ai vendore (Ollama) mbetet parazgjedhja: privat, $0, pa rrjet.
+Motori i re (`app/reja.py`) i dërgon kërkimin dhe përgjigjen te **Nebius Token Factory** —
+embedime `Qwen/Qwen3-Embedding-8B`, përgjigje `nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B`.
+
+```bash
+export NEBIUS_API_KEY=***
+export ARK_ENGINE=reja
+make gelltit && make pyet Q="Sa euro ndahen per arsim parauniversitar?"
+```
+
+**I njejti premtim, i zbatuar dy herë.** Refuzimi s'është vetëm prag:
+1. **dysheme sigurie** — poshtë saj refuzon *para* thirrjes së modelit (**$0.0**);
+2. **citimi llogaritet, nuk besohet** — `atribuo_citime()` merr numrat që shfaqen në përgjigje
+   dhe kërkon fragmentin që i përmban të gjithë. Përgjigje e rrjedhshme pa dëshmi hidhet poshtë.
+
+| Metrika (korpusi shembull) | Vlera |
+|---|---|
+| Pyetje me citim të verifikueshëm | **7/8 (87.5%)** |
+| Pyetje kurthi, të refuzuara saktë | **3/3** |
+| Latenca p50 | 3.11 s |
+| Kosto për pyetje | **$0.000057** |
+
+Tri hipoteza u provuan dhe **u rrëzuan** para këtij numri: pragu absolut 0.373 (ndarja "e pastër"
+ishte rastësi — fragmenti fitues s'kishte asnjë shifër takse), kontrata e citimit e *përshkruar* me
+fjalë, dhe besimi te citimet e modelit. Të gjitha te `docs/REJA.md`.
 ## Si punon
 1. **Gëlltitja** — për çdo skedar: lexo (PDF me `pdftotext`) → copëto → embedo → ruaj;
    raporti shënon dokumentet që **nuk** u kuptuan (p.sh. PDF të skanuar — pa tekst të nxjerrshëm).
