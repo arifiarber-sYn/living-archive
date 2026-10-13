@@ -1,0 +1,12 @@
+{
+  "burimi": "report-v3-semantik.json",
+  "pyetje": 12,
+  "sakte_pyetje": 9,
+  "sakte_pyetje_pct": 75.0,
+  "sakte_permbajtje": 10,
+  "sakte_permbajtje_pct": 83.3,
+  "citime_te_sakta": 6,
+  "citime_pct": 50.0,
+  "pyetje_te_dykuptueshme": 1,
+  "rreshtat": "redacted in the public tree — the private corpus is never published; per-row data lives in report-peps*.json"
+}

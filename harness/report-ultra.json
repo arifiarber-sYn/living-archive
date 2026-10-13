@@ -1,0 +1,25 @@
+{
+  "shkalla": "2026-10-13",
+  "modeli": "nvidia/Nemotron-3-Ultra-550b-a55b",
+  "njesi_arkive": 388,
+  "pyetje": 13,
+  "sakte": 10,
+  "sakte_pct": 76.9,
+  "citim_sakte": 7,
+  "refuzime_sakte": 3,
+  "refuzime_totale": 4,
+  "latence_p50_s": 3.06,
+  "kosto_totale_usd": 0.03596,
+  "kosto_mesatare_usd": 0.00276615,
+  "funnel": {
+    "me_id_te_pritur": 7,
+    "top1": 3,
+    "top3": 6,
+    "gjetur": 7,
+    "fjale_korpus": 110779,
+    "fjale_te_lexuara_nga_modeli_maks": 8400,
+    "pjesa_e_korpusit_qe_sheh_modeli_pct": 7.58
+  },
+  "rreshtat": "redacted in the public tree — the private corpus is never published; per-row data lives in report-peps*.json",
+  "arkiva": "388 units from arkiva"
+}

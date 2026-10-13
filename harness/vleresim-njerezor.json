@@ -1,0 +1,25 @@
+{
+  "shkalla": "2026-10-12",
+  "pershkrimi": "Rishikim njerezor i rasteve qe harnesi i shenoi XX. Dallojme SAKTE PERMBAJTJEN nga SAKTE FORMEN (citimi).",
+  "rastet": [
+    {
+      "id": "p01",
+      "permbajtja_ok": true,
+      "citimi_ok": false,
+      "arsyeja": "redacted in the public tree (quotes the private corpus)"
+    },
+    {
+      "id": "p05",
+      "permbajtja_ok": false,
+      "citimi_ok": false,
+      "pyetja_e_dykuptueshme": true,
+      "arsyeja": "redacted in the public tree (quotes the private corpus)"
+    },
+    {
+      "id": "p08",
+      "permbajtja_ok": false,
+      "citimi_ok": false,
+      "arsyeja": "redacted in the public tree (quotes the private corpus)"
+    }
+  ]
+}

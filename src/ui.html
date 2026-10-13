@@ -1,0 +1,113 @@
+<!doctype html><html lang=en><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>The Living Archive — a personal AI you can audit</title>
+<style>
+:root{--bg:#0f1115;--card:#171a21;--line:#262b36;--ink:#e8eaf0;--mute:#9aa3b2;--acc:#76b900;--acc2:#4fa3ff;--bad:#ff6b6b;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+*{box-sizing:border-box}body{margin:0;font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+header{padding:1.4rem 2rem 1rem;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;align-items:baseline}
+h1{margin:0;font-size:1.35rem;font-weight:650}h1 small{color:var(--mute);font-weight:400;font-size:.95rem;margin-left:.6rem}
+.badges{display:flex;flex-wrap:wrap;gap:.4rem;margin-left:auto}
+.badge{font:12px/1 var(--mono);padding:.35rem .55rem;border:1px solid var(--line);border-radius:999px;color:var(--mute)}
+.badge b{color:var(--acc);font-weight:600}
+main{max-width:1180px;margin:0 auto;padding:1.2rem 2rem 3rem;display:grid;grid-template-columns:1.25fr .95fr;gap:1.1rem}
+@media(max-width:900px){main{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem}
+.card h2{margin:0 0 .7rem;font-size:.82rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:600}
+.metrics{grid-column:1/-1;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.7rem}
+.m{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.75rem .9rem}
+.m .v{font-size:1.35rem;font-weight:650;font-family:var(--mono)}.m .l{color:var(--mute);font-size:.78rem}
+.ask{display:flex;gap:.5rem}input[type=text]{flex:1;padding:.7rem .85rem;font-size:1rem;background:#0c0e12;color:var(--ink);border:1px solid var(--line);border-radius:10px}
+input[type=text]:focus{outline:none;border-color:var(--acc2)}
+button{padding:.7rem 1rem;font-size:.95rem;border:0;border-radius:10px;background:var(--acc);color:#0b1200;font-weight:650;cursor:pointer}
+button.alt{background:#232834;color:var(--ink);font-weight:500}button:disabled{opacity:.5;cursor:wait}
+.out{margin-top:.9rem;padding:.9rem 1rem;background:#0c0e12;border:1px solid var(--line);border-radius:10px;white-space:pre-wrap;min-height:3.2rem;font-size:1rem}
+.out.ref{border-color:var(--bad)}.tag{display:inline-block;font:12px/1 var(--mono);padding:.25rem .5rem;border-radius:6px;margin-right:.5rem;vertical-align:middle}
+.tag.ok{background:#1d2b12;color:var(--acc)}.tag.no{background:#2b1414;color:var(--bad)}.tag.gate{background:#14212b;color:var(--acc2)}
+.meta{margin-top:.6rem;color:var(--mute);font-size:.82rem;font-family:var(--mono)}
+.cit{margin-top:.6rem;display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}.cit span.l{color:var(--mute);font-size:.82rem;margin-right:.2rem}
+.cit a{font:13px/1 var(--mono);padding:.35rem .55rem;background:#14212b;border:1px solid #1f3346;color:var(--acc2);border-radius:8px;text-decoration:none}
+.cit a:hover{border-color:var(--acc2)}
+.ex{margin-top:.6rem;font-size:.82rem;color:var(--mute)}.ex a{color:var(--mute);margin-right:.7rem;text-decoration:underline dotted;cursor:pointer}
+.mem{font-family:var(--mono);font-size:.8rem;white-space:pre-wrap;max-height:22rem;overflow:auto;background:#0c0e12;border:1px solid var(--line);border-radius:10px;padding:.8rem}
+.mem a{color:var(--acc2);text-decoration:none}.mem a:hover{text-decoration:underline}
+.row{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap;margin-bottom:.6rem}
+label.g{display:flex;align-items:center;gap:.4rem;color:var(--mute);font-size:.85rem;padding:.4rem .6rem;border:1px dashed var(--line);border-radius:8px}
+.k{color:var(--mute);font-size:.85rem}.foot{grid-column:1/-1;color:var(--mute);font-size:.8rem;border-top:1px solid var(--line);padding-top:.8rem}
+.foot a{color:var(--mute)}
+</style>
+<header>
+  <h1>The Living Archive <small>a personal AI whose memory you can read, diff and revert</small></h1>
+  <div class=badges>
+    <span class=badge>brain <b>__MODEL__</b></span>
+    <span class=badge>served by <b>Nebius Token Factory</b></span>
+    <span class=badge>memory <b>__N__ units</b> · plain Markdown under git</span>
+    <span class=badge>body <b>OpenClaw profile</b> · 4 skills</span>
+    <span class=badge>web <b>Tavily</b> · behind a privacy gate</span>
+  </div>
+</header>
+<main>
+  <section class=metrics id=metrics></section>
+
+  <section class=card>
+    <h2>Ask the archive — the answer cites a memory unit, or refuses</h2>
+    <div class=ask><input type=text id=q value="__Q__" placeholder="Ask a question…"><button id=bq onclick=ask()>Ask</button></div>
+    <div class=ex>try: __EXAMPLES__</div>
+    <div class=out id=out><span class=k>Retrieval is local (embeddings on this machine); only the six closest units reach Nemotron. Below the evidence threshold the system refuses before calling the model — $0.</span></div>
+    <div class=cit id=cit></div>
+    <div class=meta id=meta></div>
+  </section>
+
+  <section class=card>
+    <h2>Memory — the audit trail (what the agent knows, when, in which commit)</h2>
+    <div class=row>
+      <button class=alt onclick=hist()>Memory history</button>
+      <input type=text id=uid placeholder="unit id, e.g. __UID__" style="max-width:16rem">
+      <button class=alt onclick=unit()>Open unit</button>
+    </div>
+    <div class=mem id=mem>Click <b>Memory history</b> for the git log of the memory directory — every <code>remember</code> by the agent is one commit; click a sha to see the diff.</div>
+  </section>
+
+  <section class=card style="grid-column:1/-1">
+    <h2>Web — the same contract on live sources (Tavily), only with your explicit permission</h2>
+    <div class=row>
+      <input type=text id=wq placeholder="Something the archive cannot know, e.g. a deadline announced yesterday" style="flex:1;min-width:16rem">
+      <label class=g><input type=checkbox id=allow> allow this query to leave this machine</label>
+      <button id=bw onclick=web()>Search &amp; answer</button>
+    </div>
+    <div class=out id=wout><span class=k>Unticked = the privacy gate refuses and nothing is sent anywhere (the agent skill behaves the same without <code>--lejo</code>). Ticked = Tavily fetches the top pages; Nemotron reads your closest archive units <i>first</i>, then those pages, and answers <i>only</i> from them — citing <code>[unit-id]</code> and <code>[w1]</code>… side by side, or saying «I don't know».</span></div>
+    <div class=cit id=wcit></div>
+    <div class=meta id=wmeta></div>
+  </section>
+
+  <p class=foot>Every number above is read live from <a href=/kosto>/kosto</a> (the harness report in the repo). API: <code>/pyet?q=</code> · <code>/web?q=&amp;allow=1</code> · <code>/njesi/&lt;id&gt;</code> · <code>/historia</code> · <code>/diff/&lt;sha&gt;</code> · <code>/health</code>. Apache-2.0.</p>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+async function metrics(){try{const d=await (await fetch('/kosto')).json();
+ const items=[[d.sakte+'/'+d.pyetje,'correct, strict grading'],[d.refuzime_sakte+'/'+d.refuzime_totale,'traps refused'],
+  [(d.latence_p50_s??0)+' s','latency p50'],['$'+Number(d.kosto_mesatare_usd??0).toFixed(5),'cost per question'],
+  [d.njesi_arkive??'__N__','memory units'],[d.shkalla||'','measured on']];
+ $('metrics').innerHTML=items.map(([v,l])=>'<div class=m><div class=v>'+esc(v)+'</div><div class=l>'+esc(l)+'</div></div>').join('');}catch(e){}}
+function setq(s){$('q').value=s;ask();}
+async function ask(){const q=$('q').value;if(!q.trim())return;$('bq').disabled=true;$('out').className='out';$('out').textContent='…';$('cit').innerHTML='';$('meta').textContent='';
+ try{const d=await (await fetch('/pyet?q='+encodeURIComponent(q))).json();
+ const tag=d.refuzim?'<span class="tag no">REFUSED</span>':'<span class="tag ok">CITED</span>';
+ $('out').className='out'+(d.refuzim?' ref':'');$('out').innerHTML=tag+esc(d.pergjigja);
+ $('cit').innerHTML=(d.citime&&d.citime.length?'<span class=l>citations — click to open the memory unit:</span>':'')+(d.citime||[]).map(c=>{const u=(d.gjetjet||[]).find(g=>g==c||g.endsWith('-'+c))||c;return '<a href="#" onclick="showUnit(\''+u+'\');return false">['+esc(c)+']</a>'}).join('');
+ $('meta').textContent=(d.hyr===0&&d.refuzim?'refused before the model was called · 0 tokens · $0':'latency '+d.sekonda+' s · cost $'+d.kosto_usd+' · tokens '+d.hyr+'/'+d.dal)+' · retrieved: '+(d.gjetjet||[]).slice(0,4).join(', ');
+ }catch(e){$('out').textContent='error: '+e}finally{$('bq').disabled=false}}
+async function hist(){const m=$('mem');m.textContent='…';const d=await (await fetch('/historia')).json();
+ m.innerHTML='<b>git log — '+esc(d.arkiva)+'/</b> (newest first; a sha opens the diff)\n\n'+d.commits.map(c=>'<a href="#" onclick="showDiff(\''+c.sha+'\');return false">'+c.sha+'</a>  '+esc(c.data.slice(0,16))+'  '+esc(c.mesazhi)).join('\n');}
+async function showDiff(sha){const m=$('mem');m.textContent='…';const t=await (await fetch('/diff/'+sha)).text();m.innerHTML='<a href="#" onclick="hist();return false">← history</a>\n\n'+esc(t);}
+async function showUnit(id){const m=$('mem');m.textContent='…';const r=await fetch('/njesi/'+id);const t=await r.text();
+ m.innerHTML='<a href="#" onclick="hist();return false">← history</a>   <span class=k>'+esc(id)+'.md</span>\n\n'+esc(t);m.scrollIntoView({behavior:'smooth',block:'nearest'});}
+function unit(){const id=$('uid').value.trim();if(id)showUnit(id);}
+async function web(){const q=$('wq').value;if(!q.trim())return;$('bw').disabled=true;$('wout').className='out';$('wout').textContent='…';$('wcit').innerHTML='';$('wmeta').textContent='';
+ try{const d=await (await fetch('/web?q='+encodeURIComponent(q)+($('allow').checked?'&allow=1':''))).json();
+ const tag=d.porta?'<span class="tag gate">PRIVACY GATE</span>':(d.refuzim?'<span class="tag no">REFUSED</span>':'<span class="tag ok">CITED</span>');
+ $('wout').className='out'+(d.refuzim&&!d.porta?' ref':'');$('wout').innerHTML=tag+esc(d.pergjigja||d.gabim);
+ $('wcit').innerHTML=(d.citime&&d.citime.length?'<span class=l>cited — archive units open in the Memory panel, web sources open the page:</span>':'')+(d.citime||[]).map(c=>c.url?'<a href="'+esc(c.url)+'" target=_blank rel=noopener>['+esc(c.id)+'] '+esc(c.titulli||c.url)+'</a>':'<a href="#" onclick="showUnit(\''+esc(c.njesi||c.id)+'\');return false">['+esc(c.id)+'] archive</a>').join('');
+ $('wmeta').textContent=d.porta?'0 bytes left this machine · $0':'latency '+d.sekonda+' s · cost $'+d.kosto_usd+' · tokens '+d.hyr+'/'+d.dal+' · web pages: '+(d.burime||[]).length+' · archive units offered: '+(d.njesi||[]).length;
+ }catch(e){$('wout').textContent='error: '+e}finally{$('bw').disabled=false}}
+metrics();
+</script></html>

@@ -1,0 +1,101 @@
+{
+  "titulli": "The Living Archive — a personal AI you can audit",
+  "nentitulli": "Nebius × NVIDIA Global AI Hackathon · Personal AI · NVIDIA Nemotron 3 on Nebius Token Factory",
+  "gjuha": "en",
+  "zeri": "en_US-lessac-high",
+  "fps": 10,
+  "gjeresia": 1280,
+  "lartesia": 720,
+  "max_sek": 180,
+  "_lexo": "Recorded 13.10.2026 with the author's screencast tool (cards + live terminal + dashboard screenshots + TTS, hard-trimmed under 180 s). This is the exact scenario behind https://youtu.be/MGK67wLra4c; terminal blocks were executed live, nothing was staged. Paths are relative to the repo root.",
+  "blloqet": [
+    {
+      "id": "problemi",
+      "sek": 25,
+      "lloji": "karte",
+      "titulli": "The problem",
+      "rreshtat": [
+        "A personal agent that 'remembers' for you — but what did it keep, from where, and can you take it back?",
+        "Example corpus here: the 744 Python PEPs (public domain). The real one is your own notes.",
+        "A confident answer with no source costs more than 'I don't know': you act on it."
+      ],
+      "narracioni": "I have run a personal AI agent for a year over my own decisions and lessons. The useful part was never the chat — it was the memory. And the fear was always the same: what did it remember, from where, and can I take it back? Here the archive is public — the Python Enhancement Proposals — so you can rebuild every step."
+    },
+    {
+      "id": "dashboard",
+      "sek": 30,
+      "lloji": "imazh",
+      "imazhet": [
+        {
+          "skedari": "docs/screenshots/01-ask-cited.png",
+          "caption": "Ask — the answer cites a memory unit you can open; latency and cost under it",
+          "sek": 16
+        },
+        {
+          "skedari": "docs/screenshots/02-ask-refused.png",
+          "caption": "A trap (PEP 9999 does not exist) — REFUSED, not invented",
+          "sek": 14
+        }
+      ],
+      "narracioni": "This is the product. Retrieval runs locally over plain Markdown files under git; only the six closest units reach NVIDIA Nemotron 3 Super on Nebius Token Factory, and it must cite them — the id in brackets is a file you can open. Now a trap: PEP 9999 does not exist. Similar PEPs are retrieved, and the agent says I don't know. The numbers at the top are read live from the harness report, never typed in."
+    },
+    {
+      "id": "agjenti",
+      "sek": 45,
+      "lloji": "terminal",
+      "cwd": ".",
+      "komandat": [
+        "make run-peps Q=\"Which PEP added assignment expressions?\"",
+        "ARK_ARKIVA=arkiva-peps python3 src/remember.py --kategoria shenim --id nebius-video-4 --burimi 'screencast 2026-10' --tekst 'Final take: Nemotron 3 Super on Nebius Token Factory answered the PEP questions with citations; PEP 9999 was refused.' --indeks",
+        "git log -3 --format='%h %ad %s' --date=short -- arkiva-peps/",
+        "ARK_ARKIVA=arkiva-peps python3 src/audit.py shenim-nebius-video-4 | head -14",
+        "echo 'make run-peps Q=\"Which PEP is the style guide?\"' | at now + 2 minutes 2>&1 | tail -1"
+      ],
+      "narracioni": "The same from the command line — and then the agent acts. Remember: it writes a new memory unit and commits it; the git log is the audit trail, and one embedding call updates the index. Audit: for any unit you can ask what, from where, when, who, and how to revert — answered from files and git, not from the model. Remind: it schedules a job on its own scheduler. Every action leaves a commit or a job id, not a promise. The body is an isolated OpenClaw profile with four skills — ask, remember, remind, and web."
+    },
+    {
+      "id": "kujtesa-web",
+      "sek": 30,
+      "lloji": "imazh",
+      "imazhet": [
+        {
+          "skedari": "docs/screenshots/03-memory-history.png",
+          "caption": "Memory panel: git log of what the agent remembered — a sha opens the diff, an id opens the unit",
+          "sek": 12
+        },
+        {
+          "skedari": "docs/screenshots/05-web-cited.png",
+          "caption": "Web with permission: archive first, Tavily second — one answer citing [pep-0572] and [w3] side by side",
+          "sek": 18
+        }
+      ],
+      "narracioni": "The memory panel is the git log: what was remembered, when, in which commit — read it, diff it, revert it. And the web, only with your permission: unticked, the privacy gate refuses and nothing leaves the machine. Ticked, Tavily fetches the pages, Nemotron reads your archive first and the web second, and cites both — the archive knew the PEP, the web knew the Python release."
+    },
+    {
+      "id": "numrat",
+      "sek": 25,
+      "lloji": "karte",
+      "titulli": "Measured, not promised (13 Oct 2026)",
+      "rreshtat": [
+        "Public PEP corpus: 13/13 strict (9/9 cited, 4/4 traps refused) · 100-question set: 88/100, traps 20/20",
+        "Private corpus: 12/13 — the one miss is kept in the README as the open weakness",
+        "Routing, same sets, same day: Nano 11/13 · Super 12/13 · Ultra 10/13 at 3.3× the cost — Super stays default",
+        "$0.0007 per question · p50 about 3 s · 39 tests · the README quotes the report file, and a test fails if they disagree"
+      ],
+      "narracioni": "The numbers: thirteen of thirteen on the public corpus, all four traps refused; eighty-eight of a hundred on the larger set, every trap refused. Twelve of thirteen on the private corpus — the miss is kept in the README. We measured Nano, Super and Ultra on the same questions the same day: Ultra bought nothing at three times the cost, so Super stays the default. Under a tenth of a cent per question."
+    },
+    {
+      "id": "transparenca",
+      "sek": 25,
+      "lloji": "karte",
+      "titulli": "Transparency",
+      "rreshtat": [
+        "Built by one developer and his AI agent — every number you heard is in the repo, measured, with timestamps.",
+        "",
+        "Apache-2.0 · Nebius Token Factory · NVIDIA Nemotron 3 Super / Nano / Ultra (measured) · Qwen3-Embedding-8B · OpenClaw profile · Tavily",
+        "Not claimed: benchmarks beyond our question sets; an OpenShell sandbox (planned). Private archives stay private — only the public PEP corpus is shown."
+      ],
+      "narracioni": "Built by one developer and his AI agent — every number you heard is in the repo, measured, with timestamps. Nebius Token Factory, NVIDIA Nemotron, OpenClaw, Tavily. Apache 2.0. Thank you."
+    }
+  ]
+}

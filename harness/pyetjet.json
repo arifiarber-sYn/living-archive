@@ -1,0 +1,85 @@
+{
+  "shkalla": "2026-10-12 (v2, e riparuar)",
+  "pershkrimi": "Pyetje reale mbi arkiven. Toka e vertete u verifikua me grep mbi njesite, jo me mendim (shih harness/audit-toka.json).",
+  "pyetjet": [
+    {
+      "id": "p01",
+      "pyetja": "Which decision grants the agent unlimited autonomy and notification after acting?",
+      "pret": [
+        "d-070"
+      ]
+    },
+    {
+      "id": "p02",
+      "pyetja": "What replaced NOPASSWD: ALL for the privileged path?",
+      "pret": [
+        "d-077"
+      ]
+    },
+    {
+      "id": "p03",
+      "pyetja": "What are the rules for Docker containers of syn and avokatim and changing them?",
+      "pret": []
+    },
+    {
+      "id": "p04",
+      "pyetja": "How does the agent split work between the local sovereign model and the rented cloud model?",
+      "pret": [
+        "d-143"
+      ]
+    },
+    {
+      "id": "p05",
+      "pyetja": "Which lesson says that what the agent has must be read from a mechanical inventory, not from a narrative map?",
+      "pret": [
+        "l-216"
+      ]
+    },
+    {
+      "id": "p06",
+      "pyetja": "Which decision covers full competence over TotoTrading with real money?",
+      "pret": [
+        "d-132"
+      ]
+    },
+    {
+      "id": "p07",
+      "pyetja": "What is the mission mandate that says do not hesitate for infrastructure missions?",
+      "pret": [
+        "d-145"
+      ]
+    },
+    {
+      "id": "p08",
+      "refuzim": true,
+      "pyetja": "What are the PKM files with the highest Q value?"
+    },
+    {
+      "id": "p09",
+      "pyetja": "What does the kill switch and the never list protect?",
+      "pret": []
+    },
+    {
+      "id": "p10",
+      "refuzim": true,
+      "pyetja": "What is the classic recipe for Albanian byrek with spinach?"
+    },
+    {
+      "id": "p11",
+      "refuzim": true,
+      "pyetja": "Which country won the 2010 FIFA World Cup final?"
+    },
+    {
+      "id": "p12",
+      "refuzim": true,
+      "pyetja": "What is the boiling point of mercury in Celsius?"
+    },
+    {
+      "id": "p13",
+      "pyetja": "Which lesson is about running experiments with no verdict collector and no deadline watcher?",
+      "pret": [
+        "l-40"
+      ]
+    }
+  ]
+}

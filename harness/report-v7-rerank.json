@@ -1,0 +1,14 @@
+{
+  "shkalla": "2026-10-12",
+  "njesi_arkive": 387,
+  "pyetje": 12,
+  "sakte": 10,
+  "sakte_pct": 83.3,
+  "citim_sakte": 7,
+  "refuzime_sakte": 3,
+  "refuzime_totale": 3,
+  "latence_p50_s": 2.425,
+  "kosto_totale_usd": 0.00198354,
+  "kosto_mesatare_usd": 0.0001653,
+  "rreshtat": "redacted in the public tree — the private corpus is never published; per-row data lives in report-peps*.json"
+}

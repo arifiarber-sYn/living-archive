@@ -1,0 +1,47 @@
+{
+  "modeli": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "n": 5,
+  "latence_p50_s": 0.608,
+  "latence_p95_s": 0.629,
+  "kosto_totale_usd": 9.06e-05,
+  "kosto_mesatare_per_thirrje_usd": 1.812e-05,
+  "token_hyr_total": 170,
+  "token_dal_total": 335,
+  "thirrjet": [
+    {
+      "sekonda": 0.751,
+      "hyr": 34,
+      "dal": 75,
+      "kosto_usd": 2.004e-05,
+      "permbajtja": "\n7 multiplied by 8 equals 56."
+    },
+    {
+      "sekonda": 0.534,
+      "hyr": 34,
+      "dal": 63,
+      "kosto_usd": 1.716e-05,
+      "permbajtja": "\nThe result is 56."
+    },
+    {
+      "sekonda": 0.608,
+      "hyr": 34,
+      "dal": 65,
+      "kosto_usd": 1.764e-05,
+      "permbajtja": "\n7 multiplied by 8 equals 56."
+    },
+    {
+      "sekonda": 0.567,
+      "hyr": 34,
+      "dal": 66,
+      "kosto_usd": 1.788e-05,
+      "permbajtja": "\n7 multiplied by 8 equals 56."
+    },
+    {
+      "sekonda": 0.629,
+      "hyr": 34,
+      "dal": 66,
+      "kosto_usd": 1.788e-05,
+      "permbajtja": "\n7 multiplied by 8 equals 56."
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "shkalla": "2026-10-12",
+  "pershkrimi": "Auditim i tokes se vertete te pyetjeve qe harnesi shenoi gabim. Vertetuar me grep mbi arkiven, jo me mendim.",
+  "rastet": [
+    {
+      "id": "p05",
+      "pyetja": "redacted in the public tree (quotes the private corpus)",
+      "pret_origjinal": [
+        "d-137"
+      ],
+      "gjetur": [
+        "l-144"
+      ],
+      "prova": "redacted in the public tree (quotes the private corpus)",
+      "verdikt": "PYETJA E DYKUPTUESHME — te dyja njesite trajtojne kompaktimin. Defekt i vleresimit."
+    },
+    {
+      "id": "p08",
+      "pyetja": "redacted in the public tree (quotes the private corpus)",
+      "pret_origjinal": [
+        "d-144"
+      ],
+      "gjetur": [
+        "d-195"
+      ],
+      "prova": "redacted in the public tree (quotes the private corpus)",
+      "verdikt": "TOKA E VERTETE E GABUAR — d-144 nuk e permban fare informacionin. Pretendohet 'retrieval i humbi' ishte gabim i imi; korrigjohet."
+    }
+  ],
+  "pasoja": "Nga 12 pyetje, 2 deshtime jane defekte te pyetjes/tokes, jo te sistemit. Mbi pyetjet e mire-formuluara: 10/10."
+}

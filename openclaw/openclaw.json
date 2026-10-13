@@ -1,0 +1,85 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "nemotron/nvidia/nemotron-3-super-120b-a12b",
+        "fallbacks": [
+          "nemotron/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B"
+        ]
+      }
+    }
+  },
+  "models": {
+    "providers": {
+      "nemotron": {
+        "baseUrl": "https://api.tokenfactory.nebius.com/v1",
+        "api": "openai-completions",
+        "timeoutSeconds": 120,
+        "models": [
+          {
+            "id": "nvidia/nemotron-3-super-120b-a12b",
+            "name": "NVIDIA Nemotron 3 Super (Nebius Token Factory)",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 262144,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0.3,
+              "output": 0.9,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          },
+          {
+            "id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+            "name": "NVIDIA Nemotron 3 Nano (Nebius Token Factory)",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "contextWindow": 131072,
+            "maxTokens": 8192,
+            "cost": {
+              "input": 0.06,
+              "output": 0.24,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            }
+          }
+        ],
+        "apiKey": {
+          "source": "env",
+          "provider": "default",
+          "id": "NEBIUS_API_KEY"
+        }
+      }
+    }
+  },
+  "plugins": {
+    "entries": {
+      "anthropic": {
+        "config": {
+          "sessionCatalog": {
+            "enabled": false
+          }
+        }
+      },
+      "codex": {
+        "config": {
+          "sessionCatalog": {
+            "enabled": false
+          }
+        }
+      }
+    }
+  },
+  "meta": {
+    "migrations": {
+      "modelPolicyAllowlist": true,
+      "utilityModelSeparation": true
+    },
+    "lastTouchedVersion": "2026.9.8"
+  }
+}

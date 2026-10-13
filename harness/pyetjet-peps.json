@@ -1,0 +1,91 @@
+{
+  "shkalla": "2026-10-13 (v1, public example corpus: Python PEPs)",
+  "pershkrimi": "Questions over arkiva-peps/ (744 PEPs, built by harness/ndaj_korpusin.py --burimi peps). Ground truth verified by reading the `titulli` front-matter of the expected unit (grep), not from memory. 9 answerable + 4 traps.",
+  "pyetjet": [
+    {
+      "id": "q01",
+      "pyetja": "Which PEP is the style guide for Python code?",
+      "pret": [
+        "pep-0008"
+      ]
+    },
+    {
+      "id": "q02",
+      "pyetja": "Which PEP introduced f-strings, i.e. literal string interpolation?",
+      "pret": [
+        "pep-0498"
+      ]
+    },
+    {
+      "id": "q03",
+      "pyetja": "Which PEP added assignment expressions (the walrus operator)?",
+      "pret": [
+        "pep-0572"
+      ]
+    },
+    {
+      "id": "q04",
+      "pyetja": "Which PEP introduced type hints?",
+      "pret": [
+        "pep-0484"
+      ]
+    },
+    {
+      "id": "q05",
+      "pyetja": "Which PEP contains the Zen of Python?",
+      "pret": [
+        "pep-0020"
+      ]
+    },
+    {
+      "id": "q06",
+      "pyetja": "Which PEPs specify or teach structural pattern matching (the match statement)?",
+      "pret": [
+        "pep-0634",
+        "pep-0635",
+        "pep-0636"
+      ]
+    },
+    {
+      "id": "q07",
+      "pyetja": "Which PEP defines the PEP process itself — its purpose and guidelines?",
+      "pret": [
+        "pep-0001"
+      ]
+    },
+    {
+      "id": "q08",
+      "pyetja": "Which PEP proposes making the global interpreter lock optional in CPython?",
+      "pret": [
+        "pep-0703"
+      ]
+    },
+    {
+      "id": "q09",
+      "pyetja": "Which PEP introduced the with statement?",
+      "pret": [
+        "pep-0343"
+      ]
+    },
+    {
+      "id": "q10",
+      "pyetja": "What does PEP 9999 propose?",
+      "refuzim": true
+    },
+    {
+      "id": "q11",
+      "pyetja": "Which PEP specifies a Rust-style borrow checker for Python?",
+      "refuzim": true
+    },
+    {
+      "id": "q12",
+      "pyetja": "What is the classic recipe for Albanian byrek with spinach?",
+      "refuzim": true
+    },
+    {
+      "id": "q13",
+      "pyetja": "Which PEP sets the release date of Python 5.0?",
+      "refuzim": true
+    }
+  ]
+}

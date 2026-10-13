@@ -1,0 +1,35 @@
+{
+  "url": "http://127.0.0.1:8131",
+  "shots": [
+    {
+      "skedari": "01-ask-cited.png",
+      "tregon": "answerable question → answer with a [pep-xxxx] citation, latency and cost",
+      "hyrja": "Which PEP added assignment expressions?",
+      "ora": "2026-10-13T14:43:23"
+    },
+    {
+      "skedari": "02-ask-refused.png",
+      "tregon": "trap (non-existent PEP) → the model says «I don't know» instead of inventing",
+      "hyrja": "What does PEP 9999 propose?",
+      "ora": "2026-10-13T14:43:28"
+    },
+    {
+      "skedari": "03-memory-history.png",
+      "tregon": "memory audit trail: git log of the memory directory, the agent's own `remember` commits on top",
+      "hyrja": null,
+      "ora": "2026-10-13T14:43:29"
+    },
+    {
+      "skedari": "04-web-gate.png",
+      "tregon": "web layer WITHOUT permission → privacy gate refuses, 0 bytes leave the machine",
+      "hyrja": "Which PEP added assignment expressions and in which Python release did it ship?",
+      "ora": "2026-10-13T14:43:30"
+    },
+    {
+      "skedari": "05-web-cited.png",
+      "tregon": "web layer WITH permission → archive units first, Tavily pages second; one answer citing [pep-0572] and [wN] side by side",
+      "hyrja": "Which PEP added assignment expressions and in which Python release did it ship?",
+      "ora": "2026-10-13T14:43:34"
+    }
+  ]
+}

@@ -1,0 +1,2327 @@
+{
+  "shkalla": "2026-10-13",
+  "modeli": "nvidia/nemotron-3-super-120b-a12b",
+  "njesi_arkive": 745,
+  "pyetje": 100,
+  "sakte": 88,
+  "sakte_pct": 88.0,
+  "citim_sakte": 68,
+  "refuzime_sakte": 20,
+  "refuzime_totale": 20,
+  "latence_p50_s": 3.103,
+  "kosto_totale_usd": 0.0714381,
+  "kosto_mesatare_usd": 0.00071438,
+  "rreshtat": [
+    {
+      "id": "g001",
+      "pyetja": "What API endpoint related to server signature verification on PyPI mirrors is proposed for removal due to security vulnerabilities and lack of usage?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0464"
+      ],
+      "pret": [
+        "pep-0464"
+      ],
+      "refuzim": false,
+      "sekonda": 5.288,
+      "kosto_usd": 0.0007689,
+      "pergjigja": "The /serversig URL endpoints are proposed for removal due to security vulnerabilities and lack of usage. [pep-0464]",
+      "gjetjet": [
+        "pep-0464",
+        "pep-0449",
+        "pep-0480",
+        "pep-0381",
+        "pep-0815",
+        "pep-0761"
+      ]
+    },
+    {
+      "id": "g002",
+      "pyetja": "What problem did the development of PEP 508 cause for PEP 496?",
+      "ok": false,
+      "gabim": null,
+      "citime": [],
+      "pret": [
+        "pep-0496"
+      ],
+      "refuzim": true,
+      "sekonda": 5.392,
+      "kosto_usd": 0.0007017,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0508",
+        "pep-0386",
+        "pep-0516",
+        "pep-0631",
+        "pep-0440",
+        "pep-0650"
+      ]
+    },
+    {
+      "id": "g003",
+      "pyetja": "What problem arises due to the absence of a standardized asynchronous I/O interface across Python libraries?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-3153"
+      ],
+      "pret": [
+        "pep-3153"
+      ],
+      "refuzim": false,
+      "sekonda": 5.899,
+      "kosto_usd": 0.0007485,
+      "pergjigja": "Without a unified interface, developers face challenges in creating portable code because each asynchronous framework—like asyncore, custom select-based solutions, or third-party libraries such as Twisted or gevent—has incompatible APIs, limiting interoperability and increasing development effort. [",
+      "gjetjet": [
+        "pep-3153",
+        "pep-3145",
+        "pep-3156",
+        "pep-0319",
+        "pep-3148",
+        "pep-0492"
+      ]
+    },
+    {
+      "id": "g004",
+      "pyetja": "What new keywords are introduced to define and invoke a cofunction?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-3152"
+      ],
+      "pret": [
+        "pep-3152"
+      ],
+      "refuzim": false,
+      "sekonda": 2.722,
+      "kosto_usd": 0.0007167,
+      "pergjigja": "Based on the context: codef, cocall[pep-3152]",
+      "gjetjet": [
+        "pep-3152",
+        "pep-0579",
+        "pep-0580",
+        "pep-0309",
+        "pep-0403",
+        "pep-0575"
+      ]
+    },
+    {
+      "id": "g005",
+      "pyetja": "What new capabilities does argparse provide compared to getopt and optparse?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0389"
+      ],
+      "pret": [
+        "pep-0389"
+      ],
+      "refuzim": false,
+      "sekonda": 3.749,
+      "kosto_usd": 0.0007626,
+      "pergjigja": "argparse provides support for positional arguments, subcommands, required options, alternative option syntaxes like \"/f\" and \"+rgb\", zero-or-more and one-or-more style arguments, and additional features lacking in getopt and optparse. [pep-0389]",
+      "gjetjet": [
+        "pep-0389",
+        "pep-0436",
+        "pep-3102",
+        "pep-0637",
+        "pep-3105",
+        "pep-0286"
+      ]
+    },
+    {
+      "id": "g006",
+      "pyetja": "What does the proposed Abstract Base Class (ABC) support in Python aim to enable regarding isinstance() and issubclass()?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-3119"
+      ],
+      "pret": [
+        "pep-3119"
+      ],
+      "refuzim": false,
+      "sekonda": 6.263,
+      "kosto_usd": 0.0006891,
+      "pergjigja": "It aims to overload isinstance() and issubclass(). [pep-3119]",
+      "gjetjet": [
+        "pep-3119",
+        "pep-0544",
+        "pep-3141",
+        "pep-0253",
+        "pep-0254",
+        "pep-3133"
+      ]
+    },
+    {
+      "id": "g007",
+      "pyetja": "What are two benefits mentioned in the abstract regarding how enumeration values can be used?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0435"
+      ],
+      "pret": [
+        "pep-0435"
+      ],
+      "refuzim": false,
+      "sekonda": 4.513,
+      "kosto_usd": 0.0007452,
+      "pergjigja": "Enumeration values can be compared by identity and the enumeration can be iterated over. [pep-0435]",
+      "gjetjet": [
+        "pep-0435",
+        "pep-0354",
+        "pep-0663",
+        "pep-0279",
+        "pep-0661",
+        "pep-0212"
+      ]
+    },
+    {
+      "id": "g008",
+      "pyetja": "What does the __context__ attribute retain when an exception occurs during the handling of another exception?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-3134"
+      ],
+      "pret": [
+        "pep-3134"
+      ],
+      "refuzim": false,
+      "sekonda": 2.196,
+      "kosto_usd": 0.0007458,
+      "pergjigja": "the first exception (exception A) is retained via the __context__ attribute [pep-3134]",
+      "gjetjet": [
+        "pep-3134",
+        "pep-0344",
+        "pep-0415",
+        "pep-0409",
+        "pep-0785",
+        "pep-0490"
+      ]
+    },
+    {
+      "id": "g009",
+      "pyetja": "What improvements does Subversion offer over CVS for managing file renames, directory removals, and version control operations such as tagging and branching?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0347"
+      ],
+      "pret": [
+        "pep-0347"
+      ],
+      "refuzim": false,
+      "sekonda": 2.58,
+      "kosto_usd": 0.0007893,
+      "pergjigja": "Subversion offers improved functionality over CVS by allowing file and directory renames and deletions while preserving history, supporting change sets via global revision numbers, enabling atomic and fast tagging and branching, and facilitating offline diffs for patch creation. [pep-0347]",
+      "gjetjet": [
+        "pep-0347",
+        "pep-0385",
+        "pep-0374",
+        "pep-0481",
+        "pep-0507",
+        "pep-0512"
+      ]
+    },
+    {
+      "id": "g010",
+      "pyetja": "What was the date of the final release of Python 3.4?",
+      "ok": false,
+      "gabim": null,
+      "citime": [],
+      "pret": [
+        "pep-0429"
+      ],
+      "refuzim": false,
+      "sekonda": 2.233,
+      "kosto_usd": 0.0009243,
+      "pergjigja": "March 2014",
+      "gjetjet": [
+        "pep-0429",
+        "pep-0398",
+        "pep-0494",
+        "pep-0392",
+        "pep-0478",
+        "pep-0745"
+      ]
+    },
+    {
+      "id": "g011",
+      "pyetja": "Which modules are identified in the PEP as candidates for removal due to being outdated or lacking long-term usefulness?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-3108"
+      ],
+      "pret": [
+        "pep-3108"
+      ],
+      "refuzim": false,
+      "sekonda": 5.577,
+      "kosto_usd": 0.0007461,
+      "pergjigja": "Based on the context: silly old stuff, modules listed in PEP 3108 under \"Modules to Remove\". [pep-3108]",
+      "gjetjet": [
+        "pep-0004",
+        "pep-3108",
+        "pep-0594",
+        "pep-3001",
+        "pep-0632",
+        "pep-3139"
+      ]
+    },
+    {
+      "id": "g012",
+      "pyetja": "What problem does adding a `metadata` section to `setup.cfg` solve regarding the use of `setup.py`?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0390"
+      ],
+      "pret": [
+        "pep-0390"
+      ],
+      "refuzim": false,
+      "sekonda": 4.944,
+      "kosto_usd": 0.0007806,
+      "pergjigja": "Adding a `metadata` section to `setup.cfg` solves the problem of needing to run `setup.py` commands to inspect package metadata, which could break or cause unintended side effects when `setup.py` contains additional code beyond metadata declaration. [pep-0390]",
+      "gjetjet": [
+        "pep-0390",
+        "pep-0808",
+        "pep-0621",
+        "pep-0345",
+        "pep-0566",
+        "pep-0723"
+      ]
+    },
+    {
+      "id": "g013",
+      "pyetja": "What change did the proposed optimization aim to achieve regarding repeated patterns like `_len=len` in Python's standard library?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0329"
+      ],
+      "pret": [
+        "pep-0329"
+      ],
+      "refuzim": false,
+      "sekonda": 4.939,
+      "kosto_usd": 0.0007317,
+      "pergjigja": "Replace repeated assignments like _len=len with a function call to treat built-in references as constants, reducing code clutter and improving consistency across the standard library. [pep-0329]",
+      "gjetjet": [
+        "pep-0329",
+        "pep-0266",
+        "pep-0709",
+        "pep-0488",
+        "pep-0511",
+        "pep-0267"
+      ]
+    },
+    {
+      "id": "g014",
+      "pyetja": "What alternative approaches does the BDFL suggest for sorting dictionary items by value instead of implementing a dedicated 'sort by value' operation?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0265"
+      ],
+      "pret": [
+        "pep-0265"
+      ],
+      "refuzim": false,
+      "sekonda": 2.391,
+      "kosto_usd": 0.0007998,
+      "pergjigja": "Use sorted(d.iteritems(), key=itemgetter(1)) or sorted(d, key=d.__getitem__) for full sorts, and heapq.nlargest(n, d.iteritems(), key=itemgetter(1)) for top-n values. [pep-0265]",
+      "gjetjet": [
+        "pep-0265",
+        "pep-3106",
+        "pep-0274",
+        "pep-0372",
+        "pep-0469",
+        "pep-3128"
+      ]
+    },
+    {
+      "id": "g015",
+      "pyetja": "When does the first maintenance release of Python 3.14 occur?",
+      "ok": false,
+      "gabim": null,
+      "citime": [],
+      "pret": [
+        "pep-0745"
+      ],
+      "refuzim": true,
+      "sekonda": 2.788,
+      "kosto_usd": 0.0010131,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0745",
+        "pep-0619",
+        "pep-0719",
+        "pep-0398",
+        "pep-0375",
+        "pep-0664"
+      ]
+    },
+    {
+      "id": "g016",
+      "pyetja": "What are the four new time-related functions proposed in PEP 418?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0418"
+      ],
+      "pret": [
+        "pep-0418"
+      ],
+      "refuzim": false,
+      "sekonda": 4.475,
+      "kosto_usd": 0.0007893,
+      "pergjigja": "PEP 418 proposes adding `time.get_clock_info()`, `time.monotonic()`, `time.perf_counter()`, and `time.process_time()` functions to Python 3.3. [pep-0418]",
+      "gjetjet": [
+        "pep-0418",
+        "pep-0564",
+        "pep-0303",
+        "pep-0495",
+        "pep-0410",
+        "pep-0320"
+      ]
+    },
+    {
+      "id": "g017",
+      "pyetja": "What does PDDM stand for?",
+      "ok": false,
+      "gabim": null,
+      "citime": [],
+      "pret": [
+        "pep-0500"
+      ],
+      "refuzim": true,
+      "sekonda": 1.745,
+      "kosto_usd": 0.0,
+      "pergjigja": "I don't know — no archive entry passes the evidence threshold.",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0801",
+        "pep-0609",
+        "pep-0350",
+        "pep-0813",
+        "pep-0009"
+      ]
+    },
+    {
+      "id": "g018",
+      "pyetja": "What does the author suggest about the practical utility of continuations beyond enabling generators, microthreads, and coroutines?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0219"
+      ],
+      "pret": [
+        "pep-0219"
+      ],
+      "refuzim": false,
+      "sekonda": 6.815,
+      "kosto_usd": 0.0007206,
+      "pergjigja": "The author suggests that despite over a year of effort, no productive use of continuations beyond enabling generators, microthreads, and coroutines has been found, indicating little demand for their broader support. [pep-0219]",
+      "gjetjet": [
+        "pep-0220",
+        "pep-0219",
+        "pep-0342",
+        "pep-0334",
+        "pep-0288",
+        "pep-3152"
+      ]
+    },
+    {
+      "id": "g019",
+      "pyetja": "What alternative naming convention does the PEP propose to avoid conflicts between using underscore for unused variables and its role in internationalization?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0640"
+      ],
+      "pret": [
+        "pep-0640"
+      ],
+      "refuzim": false,
+      "sekonda": 2.615,
+      "kosto_usd": 0.0007614,
+      "pergjigja": "The PEP proposes introducing a special syntax `_=` for unused variables to avoid conflict with the underscore used in internationalization. [pep-0640]",
+      "gjetjet": [
+        "pep-0640",
+        "pep-0641",
+        "pep-3131",
+        "pep-0423",
+        "pep-3114",
+        "pep-0294"
+      ]
+    },
+    {
+      "id": "g020",
+      "pyetja": "What limitation does the current implementation impose on the use of yield statements within try-finally blocks inside generators?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0325"
+      ],
+      "pret": [
+        "pep-0325"
+      ],
+      "refuzim": false,
+      "sekonda": 3.614,
+      "kosto_usd": 0.0007251,
+      "pergjigja": "A yield statement is not allowed in the try clause of a try-finally statement inside a generator. [pep-0325]",
+      "gjetjet": [
+        "pep-0325",
+        "pep-0479",
+        "pep-0789",
+        "pep-0288",
+        "pep-0765",
+        "pep-0521"
+      ]
+    },
+    {
+      "id": "g021",
+      "pyetja": "How does the proposed feature enable users to determine when individual exceptions within an ExceptionGroup were raised without modifying application code?",
+      "ok": false,
+      "gabim": null,
+      "citime": [],
+      "pret": [
+        "pep-0830"
+      ],
+      "refuzim": true,
+      "sekonda": 2.607,
+      "kosto_usd": 0.0007008,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0785",
+        "pep-0830",
+        "pep-0678",
+        "pep-0654",
+        "pep-3134",
+        "pep-0344"
+      ]
+    },
+    {
+      "id": "g022",
+      "pyetja": "On what date was Python 2.0 scheduled to reach its final release according to the revised timeline?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0200"
+      ],
+      "pret": [
+        "pep-0200"
+      ],
+      "refuzim": false,
+      "sekonda": 2.565,
+      "kosto_usd": 0.0008382,
+      "pergjigja": "16-Oct-2000: 2.0 final [pep-0200]",
+      "gjetjet": [
+        "pep-0361",
+        "pep-0373",
+        "pep-0200",
+        "pep-0251",
+        "pep-0283",
+        "pep-0392"
+      ]
+    },
+    {
+      "id": "g023",
+      "pyetja": "What version control systems does this proposal suggest adopting for CPython's main repository?",
+      "ok": false,
+      "gabim": null,
+      "citime": [
+        "pep-0507"
+      ],
+      "pret": [
+        "pep-0481"
+      ],
+      "refuzim": false,
+      "sekonda": 3.986,
+      "kosto_usd": 0.0007518,
+      "pergjigja": "It suggests adopting Git for CPython's main repository. [pep-0507]",
+      "gjetjet": [
+        "pep-0507",
+        "pep-0481",
+        "pep-0374",
+        "pep-0347",
+        "pep-0474",
+        "pep-0512"
+      ]
+    },
+    {
+      "id": "g024",
+      "pyetja": "What does PEP 281 propose regarding the behavior of the `range()` and `xrange()` functions when their arguments are objects with a `__len__` method?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0276",
+        "pep-0281",
+        "pep-0284"
+      ],
+      "pret": [
+        "pep-0281"
+      ],
+      "refuzim": false,
+      "sekonda": 2.572,
+      "kosto_usd": 0.0008217,
+      "pergjigja": "PEP 281 proposes that the functionality of the `indices()` function from PEP 212 be included in the existing `range()` and `xrange()` functions, allowing them to accept any object with a `__len__` method and treat it as equivalent to passing `len(obj)` as the argument.",
+      "gjetjet": [
+        "pep-0260",
+        "pep-0281",
+        "pep-0204",
+        "pep-0276",
+        "pep-0284",
+        "pep-0357"
+      ]
+    },
+    {
+      "id": "g025",
+      "pyetja": "What are the four proposed additions to the bytes and bytearray types described in the document?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0467"
+      ],
+      "pret": [
+        "pep-0467"
+      ],
+      "refuzim": false,
+      "sekonda": 2.395,
+      "kosto_usd": 0.0007482,
+      "pergjigja": "Add ``fromsize`` alternative constructor, add ``fromint`` alternative constructor, add ``getbyte`` byte retrieval method, add ``iterbytes`` alternative iterator. [pep-0467]",
+      "gjetjet": [
+        "pep-0467",
+        "pep-0296",
+        "pep-3137",
+        "pep-0358",
+        "pep-0461",
+        "pep-0460"
+      ]
+    },
+    {
+      "id": "g026",
+      "pyetja": "What method does this proposal introduce to enable editable installations for projects using pyproject.toml-based builds?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0660"
+      ],
+      "pret": [
+        "pep-0660"
+      ],
+      "refuzim": false,
+      "sekonda": 10.534,
+      "kosto_usd": 0.000735,
+      "pergjigja": "A :pep:`517` style method for the installation of packages in editable mode. [pep-0660]",
+      "gjetjet": [
+        "pep-0660",
+        "pep-0662",
+        "pep-0517",
+        "pep-0516",
+        "pep-0627",
+        "pep-0621"
+      ]
+    },
+    {
+      "id": "g027",
+      "pyetja": "What does introducing TypeVarTuple enable regarding the parameterization of generic types?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0646"
+      ],
+      "pret": [
+        "pep-0646"
+      ],
+      "refuzim": false,
+      "sekonda": 2.347,
+      "kosto_usd": 0.0007578,
+      "pergjigja": "Introducing TypeVarTuple enables parameterization with an arbitrary number of types, allowing variadic generics. [pep-0646]",
+      "gjetjet": [
+        "pep-0646",
+        "pep-0695",
+        "pep-0696",
+        "pep-0585",
+        "pep-0612",
+        "pep-0718"
+      ]
+    },
+    {
+      "id": "g028",
+      "pyetja": "What transformation step follows the creation of an abstract syntax tree during Python's compilation process starting with version 2.5?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0339"
+      ],
+      "pret": [
+        "pep-0339"
+      ],
+      "refuzim": false,
+      "sekonda": 3.144,
+      "kosto_usd": 0.0007686,
+      "pergjigja": "Transform AST into a Control Flow Graph (Python/compile.c)[pep-0339]",
+      "gjetjet": [
+        "pep-0339",
+        "pep-0511",
+        "pep-0306",
+        "pep-0744",
+        "pep-0356",
+        "pep-0269"
+      ]
+    },
+    {
+      "id": "g029",
+      "pyetja": "What feature does this proposal add to the `bytes` and `bytearray` types?",
+      "ok": false,
+      "gabim": null,
+      "citime": [
+        "pep-0467"
+      ],
+      "pret": [
+        "pep-0461"
+      ],
+      "refuzim": false,
+      "sekonda": 3.217,
+      "kosto_usd": 0.0007509,
+      "pergjigja": "It adds the `fromsize`, `fromint`, `getbyte`, and `iterbytes` methods to the `bytes` and `bytearray` types. [pep-0467]",
+      "gjetjet": [
+        "pep-0296",
+        "pep-3137",
+        "pep-0467",
+        "pep-0358",
+        "pep-0332",
+        "pep-0782"
+      ]
+    },
+    {
+      "id": "g030",
+      "pyetja": "What does postponing the evaluation of annotations solve regarding forward references and computational cost?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0563",
+        "pep-0649"
+      ],
+      "pret": [
+        "pep-0563"
+      ],
+      "refuzim": false,
+      "sekonda": 2.386,
+      "kosto_usd": 0.0007299,
+      "pergjigja": "Postponing the evaluation of annotations solves forward-reference and circular-reference problems while reducing unnecessary computation during program startup. [pep-0563][pep-0649]",
+      "gjetjet": [
+        "pep-0563",
+        "pep-0649",
+        "pep-0749",
+        "pep-0849",
+        "pep-0593",
+        "pep-0403"
+      ]
+    },
+    {
+      "id": "g031",
+      "pyetja": "What change does the proposal make regarding how newly registered projects on PyPI handle release file links by default?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0438"
+      ],
+      "pret": [
+        "pep-0438"
+      ],
+      "refuzim": false,
+      "sekonda": 5.083,
+      "kosto_usd": 0.0007392,
+      "pergjigja": "Newly registered projects on PyPI will default to serving only links to release files that were uploaded to PyPI. [pep-0438]",
+      "gjetjet": [
+        "pep-0438",
+        "pep-0470",
+        "pep-0753",
+        "pep-0763",
+        "pep-0592",
+        "pep-0715"
+      ]
+    },
+    {
+      "id": "g032",
+      "pyetja": "What new functionality does this proposal add to support attaching C-level state to subclasses of built-in types like 'type' through the Limited C API?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0697"
+      ],
+      "pret": [
+        "pep-0697"
+      ],
+      "refuzim": false,
+      "sekonda": 5.241,
+      "kosto_usd": 0.0007725,
+      "pergjigja": "The proposal adds support for extending heap-allocated types with opaque data via the Limited C API, enabling attachment of C-level state to subclasses of built-in types like 'type'. [pep-0697]",
+      "gjetjet": [
+        "pep-0697",
+        "pep-0573",
+        "pep-0253",
+        "pep-0820",
+        "pep-0580",
+        "pep-0579"
+      ]
+    },
+    {
+      "id": "g033",
+      "pyetja": "What is the maximum time window after upload during which users can delete files, releases, or projects from PyPI according to the proposed policy?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0763"
+      ],
+      "pret": [
+        "pep-0763"
+      ],
+      "refuzim": false,
+      "sekonda": 2.387,
+      "kosto_usd": 0.0007419,
+      "pergjigja": "Users may only delete files, releases, or projects within 72 hours of upload. [pep-0763]",
+      "gjetjet": [
+        "pep-0763",
+        "pep-0592",
+        "pep-0527",
+        "pep-0470",
+        "pep-0438",
+        "pep-0541"
+      ]
+    },
+    {
+      "id": "g034",
+      "pyetja": "What problem does the current lack of symlink support in wheels create for projects distributing large compiled libraries?",
+      "ok": false,
+      "gabim": null,
+      "citime": [],
+      "pret": [
+        "pep-0778"
+      ],
+      "refuzim": true,
+      "sekonda": 3.002,
+      "kosto_usd": 0.0007227,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0778",
+        "pep-0759",
+        "pep-0491",
+        "pep-0427",
+        "pep-0777",
+        "pep-3149"
+      ]
+    },
+    {
+      "id": "g035",
+      "pyetja": "What mechanism does this proposal introduce to enable domain-specific language extensions while minimizing overall language complexity?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0638"
+      ],
+      "pret": [
+        "pep-0638"
+      ],
+      "refuzim": false,
+      "sekonda": 4.038,
+      "kosto_usd": 0.0007545,
+      "pergjigja": "It introduces syntactic macros that transform parts of the program’s syntax tree at compile time, enabling domain-specific extensions without adding general-purpose language features. [pep-0638]",
+      "gjetjet": [
+        "pep-0638",
+        "pep-0244",
+        "pep-0269",
+        "pep-3124",
+        "pep-0697",
+        "pep-3003"
+      ]
+    },
+    {
+      "id": "g036",
+      "pyetja": "What change does the proposed PEP suggest for the repr() function regarding which characters are considered 'printable'?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-3138"
+      ],
+      "pret": [
+        "pep-3138"
+      ],
+      "refuzim": false,
+      "sekonda": 11.735,
+      "kosto_usd": 0.000762,
+      "pergjigja": "A wider range of characters, based on the Unicode standard, should be considered 'printable'. [pep-3138]",
+      "gjetjet": [
+        "pep-3138",
+        "pep-3140",
+        "pep-0813",
+        "pep-3105",
+        "pep-0259",
+        "pep-3002"
+      ]
+    },
+    {
+      "id": "g037",
+      "pyetja": "What is the primary reason cited for proposing the `manylinux2010` platform tag as a successor to `manylinux1`?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0571"
+      ],
+      "pret": [
+        "pep-0571"
+      ],
+      "refuzim": false,
+      "sekonda": 2.993,
+      "kosto_usd": 0.0007761,
+      "pergjigja": "The primary reason is to improve accessibility of binary extension modules on common Linux architectures by reducing dependence on fragile development environments and build toolchains, building on the success of the `manylinux1` tag. [pep-0571]",
+      "gjetjet": [
+        "pep-0571",
+        "pep-0599",
+        "pep-0600",
+        "pep-0656",
+        "pep-0513",
+        "pep-0011"
+      ]
+    },
+    {
+      "id": "g038",
+      "pyetja": "What mechanism does the proposal introduce to express software licensing terms in Python packages using a standardized format?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0639"
+      ],
+      "pret": [
+        "pep-0639"
+      ],
+      "refuzim": false,
+      "sekonda": 3.533,
+      "kosto_usd": 0.0007398,
+      "pergjigja": "Adopts the SPDX license expression syntax as a means of expressing the license for a Python project. [pep-0639]",
+      "gjetjet": [
+        "pep-0639",
+        "pep-0459",
+        "pep-0807",
+        "pep-0627",
+        "pep-0770",
+        "pep-0426"
+      ]
+    },
+    {
+      "id": "g039",
+      "pyetja": "What change does this PEP propose regarding the `print` construct in Python?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-3105"
+      ],
+      "pret": [
+        "pep-3105"
+      ],
+      "refuzim": false,
+      "sekonda": 2.449,
+      "kosto_usd": 0.0007419,
+      "pergjigja": "Make print a function instead of a statement. [pep-3105]",
+      "gjetjet": [
+        "pep-3105",
+        "pep-3100",
+        "pep-0214",
+        "pep-3002",
+        "pep-0259",
+        "pep-3099"
+      ]
+    },
+    {
+      "id": "g040",
+      "pyetja": "What change did this proposal introduce regarding how Python handles the order of class attributes during definition?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0520"
+      ],
+      "pret": [
+        "pep-0520"
+      ],
+      "refuzim": false,
+      "sekonda": 2.36,
+      "kosto_usd": 0.0007272,
+      "pergjigja": "It preserves the order in which attributes are introduced in the class definition body in the `__definition_order__` attribute of the class. [pep-0520]",
+      "gjetjet": [
+        "pep-0520",
+        "pep-3115",
+        "pep-0422",
+        "pep-0487",
+        "pep-3129",
+        "pep-0372"
+      ]
+    },
+    {
+      "id": "g041",
+      "pyetja": "What problem arises when executing a module inside a package after implementing PEP 328 due to changes in the __name__ attribute?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-3122"
+      ],
+      "pret": [
+        "pep-3122"
+      ],
+      "refuzim": false,
+      "sekonda": 8.764,
+      "kosto_usd": 0.000756,
+      "pergjigja": "Executing a module inside a package fails for relative imports because the module’s __name__ is replaced with \"__main__\", breaking the ability to resolve relative imports into absolute names. [pep-3122]",
+      "gjetjet": [
+        "pep-3122",
+        "pep-0366",
+        "pep-0395",
+        "pep-0338",
+        "pep-0499",
+        "pep-0328"
+      ]
+    },
+    {
+      "id": "g042",
+      "pyetja": "What mechanism does the proposal suggest for enhancing both documentation and testing through executable conditions tied to functions, methods, classes, and modules?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0316"
+      ],
+      "pret": [
+        "pep-0316"
+      ],
+      "refuzim": false,
+      "sekonda": 3.769,
+      "kosto_usd": 0.0007257,
+      "pergjigja": "Programming by Contract for Python suggests extending the language to include invariant expressions for classes and modules, and pre- and post-condition expressions for functions and methods, which serve as executable conditions that enhance documentation and testing. [pep-0316]",
+      "gjetjet": [
+        "pep-0316",
+        "pep-0232",
+        "pep-0727",
+        "pep-0256",
+        "pep-0257",
+        "pep-0224"
+      ]
+    },
+    {
+      "id": "g043",
+      "pyetja": "What is the purpose of introducing the `breakpoint()` built-in function as described in the document?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0553"
+      ],
+      "pret": [
+        "pep-0553"
+      ],
+      "refuzim": false,
+      "sekonda": 2.899,
+      "kosto_usd": 0.0007545,
+      "pergjigja": "To enter a Python debugger at the point of the call and allow configuration of which debugger is used via sys module names. [pep-0553]",
+      "gjetjet": [
+        "pep-0553",
+        "pep-0559",
+        "pep-0548",
+        "pep-3136",
+        "pep-0601",
+        "pep-0669"
+      ]
+    },
+    {
+      "id": "g044",
+      "pyetja": "What new immutable type was introduced to Python's builtins module according to the document?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0814"
+      ],
+      "pret": [
+        "pep-0814"
+      ],
+      "refuzim": false,
+      "sekonda": 3.16,
+      "kosto_usd": 0.0007386,
+      "pergjigja": "frozendict [pep-0814]",
+      "gjetjet": [
+        "pep-0814",
+        "pep-0841",
+        "pep-3137",
+        "pep-0351",
+        "pep-0416",
+        "pep-0603"
+      ]
+    },
+    {
+      "id": "g045",
+      "pyetja": "What is the primary objective behind reducing feature duplication in Python 3.0 according to PEP 3100?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-3100"
+      ],
+      "pret": [
+        "pep-3100"
+      ],
+      "refuzim": false,
+      "sekonda": 2.106,
+      "kosto_usd": 0.0007623,
+      "pergjigja": "One obvious way of doing something.",
+      "gjetjet": [
+        "pep-3100",
+        "pep-3002",
+        "pep-3003",
+        "pep-3000",
+        "pep-3099",
+        "pep-3108"
+      ]
+    },
+    {
+      "id": "g046",
+      "pyetja": "What change does this PEP propose regarding the behavior of **kwargs in function definitions?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0468"
+      ],
+      "pret": [
+        "pep-0468"
+      ],
+      "refuzim": false,
+      "sekonda": 4.498,
+      "kosto_usd": 0.0007389,
+      "pergjigja": "It preserves the order of keyword arguments passed via **kwargs in a function body as an ordered mapping. [pep-0468]",
+      "gjetjet": [
+        "pep-0468",
+        "pep-3102",
+        "pep-0692",
+        "pep-0736",
+        "pep-0637",
+        "pep-0821"
+      ]
+    },
+    {
+      "id": "g047",
+      "pyetja": "Which range of PEP numbers represents the candidates being voted on to select Python's new governance model? ?",
+      "ok": false,
+      "gabim": null,
+      "citime": [],
+      "pret": [
+        "pep-8001"
+      ],
+      "refuzim": false,
+      "sekonda": 2.388,
+      "kosto_usd": 0.000858,
+      "pergjigja": "Based on the context: 8000-8009.",
+      "gjetjet": [
+        "pep-8001",
+        "pep-8000",
+        "pep-8107",
+        "pep-8104",
+        "pep-8105",
+        "pep-8106"
+      ]
+    },
+    {
+      "id": "g048",
+      "pyetja": "What change does the proposal introduce to allow direct access to distribution metadata files via the simple repository API?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0658"
+      ],
+      "pret": [
+        "pep-0658"
+      ],
+      "refuzim": false,
+      "sekonda": 2.261,
+      "kosto_usd": 0.000771,
+      "pergjigja": "It introduces an anchor tag with a 'data-dist-info-metadata' attribute to enable independent fetching of METADATA files from distributions in the simple repository API. [pep-0658]",
+      "gjetjet": [
+        "pep-0658",
+        "pep-0714",
+        "pep-0629",
+        "pep-0700",
+        "pep-0610",
+        "pep-0301"
+      ]
+    },
+    {
+      "id": "g049",
+      "pyetja": "What feature does this proposal introduce to allow debuggers to attach to running Python processes without performance impact?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0768"
+      ],
+      "pret": [
+        "pep-0768"
+      ],
+      "refuzim": false,
+      "sekonda": 7.452,
+      "kosto_usd": 0.0007317,
+      "pergjigja": "It introduces a zero-overhead debugging interface that enables safe attachment of debuggers to running Python processes without modifying the interpreter's normal execution path or adding runtime overhead. [pep-0768]",
+      "gjetjet": [
+        "pep-0768",
+        "pep-0669",
+        "pep-0831",
+        "pep-0523",
+        "pep-0553",
+        "pep-0578"
+      ]
+    },
+    {
+      "id": "g050",
+      "pyetja": "How can workflow tools reliably locate a project's preferred virtual environment without relying on scanning directories or assuming local placement within the project folder?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0832"
+      ],
+      "pret": [
+        "pep-0832"
+      ],
+      "refuzim": false,
+      "sekonda": 3.015,
+      "kosto_usd": 0.0007428,
+      "pergjigja": "Workflow tools can rely on a standardized configuration file specified by the project to indicate the path to the preferred virtual environment, enabling reliable discovery regardless of its filesystem location. [pep-0832]",
+      "gjetjet": [
+        "pep-0832",
+        "pep-0486",
+        "pep-0704",
+        "pep-0405",
+        "pep-0838",
+        "pep-0662"
+      ]
+    },
+    {
+      "id": "g051",
+      "pyetja": "What problem arises when attempting to implement overloading for the 'and' and 'or' operators using standard special methods due to their semantic behavior?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0335"
+      ],
+      "pret": [
+        "pep-0335"
+      ],
+      "refuzim": false,
+      "sekonda": 4.991,
+      "kosto_usd": 0.0007509,
+      "pergjigja": "These operators have short-circuiting semantics, meaning the second operand is not evaluated if the result can be determined from the first operand, making standard special methods ineffective. [pep-0335]",
+      "gjetjet": [
+        "pep-0335",
+        "pep-0532",
+        "pep-0207",
+        "pep-3124",
+        "pep-0208",
+        "pep-0225"
+      ]
+    },
+    {
+      "id": "g052",
+      "pyetja": "What problem does the proposed solution aim to solve regarding the limitations of both eager evaluation and stringized annotations?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0649"
+      ],
+      "pret": [
+        "pep-0649"
+      ],
+      "refuzim": false,
+      "sekonda": 2.329,
+      "kosto_usd": 0.0007362,
+      "pergjigja": "It aims to solve chronic problems for static type analysis users due to forward-reference and circular-reference issues from eager evaluation, and chronic problems for runtime users of annotations from stringized annotations. [pep-0649]",
+      "gjetjet": [
+        "pep-0649",
+        "pep-0563",
+        "pep-0749",
+        "pep-0849",
+        "pep-0727",
+        "pep-0593"
+      ]
+    },
+    {
+      "id": "g053",
+      "pyetja": "What problem does the proposed enhancement to subprocess.Popen aim to solve regarding interaction with child processes?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-3145"
+      ],
+      "pret": [
+        "pep-3145"
+      ],
+      "refuzim": false,
+      "sekonda": 2.189,
+      "kosto_usd": 0.000735,
+      "pergjigja": "It aims to prevent deadlocking and blocking of the parent script when waiting for data from the child process during communication via stdin, stdout, or stderr. [pep-3145]",
+      "gjetjet": [
+        "pep-3145",
+        "pep-0324",
+        "pep-0446",
+        "pep-0433",
+        "pep-0787",
+        "pep-0434"
+      ]
+    },
+    {
+      "id": "g054",
+      "pyetja": "What additional dunder attributes beyond __match_args__ does this proposal introduce to enhance precision and efficiency in pattern matching?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0653"
+      ],
+      "pret": [
+        "pep-0653"
+      ],
+      "refuzim": false,
+      "sekonda": 2.86,
+      "kosto_usd": 0.0007707,
+      "pergjigja": "It introduces `__match_container__` and `__match_class__` as integer-valued dunder attributes alongside `__match_args__` to improve clarity, reasoning, and performance in pattern matching. [pep-0653]",
+      "gjetjet": [
+        "pep-0653",
+        "pep-0642",
+        "pep-0845",
+        "pep-0622",
+        "pep-0635",
+        "pep-0634"
+      ]
+    },
+    {
+      "id": "g055",
+      "pyetja": "What changes does the specification make regarding the future deprecation and removal of `from __future__ import annotations`?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0749"
+      ],
+      "pret": [
+        "pep-0749"
+      ],
+      "refuzim": false,
+      "sekonda": 2.551,
+      "kosto_usd": 0.0007377,
+      "pergjigja": "It will continue to exist with its current behavior at least until Python 3.13 reaches its end-of-life; subsequently, it will be deprecated and eventually removed. [pep-0749]",
+      "gjetjet": [
+        "pep-0749",
+        "pep-0563",
+        "pep-0236",
+        "pep-0244",
+        "pep-0005",
+        "pep-0649"
+      ]
+    },
+    {
+      "id": "g056",
+      "pyetja": "What character was proposed to be added to Python's format specifier mini-language to enable thousands separation?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0378"
+      ],
+      "pret": [
+        "pep-0378"
+      ],
+      "refuzim": false,
+      "sekonda": 8.136,
+      "kosto_usd": 0.0007599,
+      "pergjigja": "A comma (,) was proposed to be added to Python's format specifier mini-language to enable thousands separation. [pep-0378]",
+      "gjetjet": [
+        "pep-0378",
+        "pep-0515",
+        "pep-0313",
+        "pep-3101",
+        "pep-0786",
+        "pep-0641"
+      ]
+    },
+    {
+      "id": "g057",
+      "pyetja": "What change does the proposal introduce regarding how a module executed with `python -m` appears in `sys.modules`?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0499"
+      ],
+      "pret": [
+        "pep-0499"
+      ],
+      "refuzim": false,
+      "sekonda": 3.315,
+      "kosto_usd": 0.0007398,
+      "pergjigja": "The module is additionally bound under its original name in `sys.modules`, alongside `__main__`. [pep-0499]",
+      "gjetjet": [
+        "pep-0499",
+        "pep-0338",
+        "pep-0366",
+        "pep-0547",
+        "pep-3122",
+        "pep-0395"
+      ]
+    },
+    {
+      "id": "g058",
+      "pyetja": "What does the proposed GlobalImportEngine subclass do to maintain compatibility with existing import behavior?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0406"
+      ],
+      "pret": [
+        "pep-0406"
+      ],
+      "refuzim": false,
+      "sekonda": 2.665,
+      "kosto_usd": 0.0007278,
+      "pergjigja": "It writes through to the process global state, providing a backward-compatible bridge between the encapsulated API and legacy global import state. [pep-0406]",
+      "gjetjet": [
+        "pep-0406",
+        "pep-0302",
+        "pep-0369",
+        "pep-0451",
+        "pep-0794",
+        "pep-0487"
+      ]
+    },
+    {
+      "id": "g059",
+      "pyetja": "What does this PEP describe regarding the mirroring infrastructure for PyPI?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0381"
+      ],
+      "pret": [
+        "pep-0381"
+      ],
+      "refuzim": false,
+      "sekonda": 3.894,
+      "kosto_usd": 0.0007257,
+      "pergjigja": "This PEP describes a mirroring infrastructure for PyPI. [pep-0381]",
+      "gjetjet": [
+        "pep-0381",
+        "pep-0464",
+        "pep-0449",
+        "pep-0470",
+        "pep-0438",
+        "pep-0503"
+      ]
+    },
+    {
+      "id": "g060",
+      "pyetja": "What shorthand syntax does this proposal suggest for simplifying redundant keyword arguments where the parameter name matches the variable name?",
+      "ok": false,
+      "gabim": null,
+      "citime": [],
+      "pret": [
+        "pep-0736"
+      ],
+      "refuzim": false,
+      "sekonda": 2.27,
+      "kosto_usd": 0.0007245,
+      "pergjigja": "f(x=)",
+      "gjetjet": [
+        "pep-0736",
+        "pep-3102",
+        "pep-0312",
+        "pep-0637",
+        "pep-0472",
+        "pep-0821"
+      ]
+    },
+    {
+      "id": "g061",
+      "pyetja": "What security framework does this PEP propose integrating with PyPI to enhance download integrity through signed metadata?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0458"
+      ],
+      "pret": [
+        "pep-0458"
+      ],
+      "refuzim": false,
+      "sekonda": 4.952,
+      "kosto_usd": 0.0007425,
+      "pergjigja": "PEP 458 proposes integrating The Update Framework (TUF) with PyPI to provide signed repository metadata for secure downloads. [pep-0458]",
+      "gjetjet": [
+        "pep-0458",
+        "pep-0480",
+        "pep-0740",
+        "pep-0464",
+        "pep-0438",
+        "pep-0761"
+      ]
+    },
+    {
+      "id": "g062",
+      "pyetja": "What type of PEP is described in the document?",
+      "ok": false,
+      "gabim": null,
+      "citime": [
+        "pep-0001",
+        "pep-0009",
+        "pep-0012",
+        "pep-0676"
+      ],
+      "pret": [
+        "pep-0579"
+      ],
+      "refuzim": false,
+      "sekonda": 10.792,
+      "kosto_usd": 0.0005862,
+      "pergjigja": "Process",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0012",
+        "pep-0009",
+        "shenim-nebius-video-1",
+        "pep-0676",
+        "pep-0801"
+      ]
+    },
+    {
+      "id": "g063",
+      "pyetja": "What performance improvement does the proposed sys.monitoring API aim to achieve compared to previous versions when debugging?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0669"
+      ],
+      "pret": [
+        "pep-0669"
+      ],
+      "refuzim": false,
+      "sekonda": 2.922,
+      "kosto_usd": 0.0007173,
+      "pergjigja": "It aims to reduce the performance impact of debugging and profiling from orders of magnitude slowdowns to near-full-speed operation. [pep-0669]",
+      "gjetjet": [
+        "pep-0669",
+        "pep-0831",
+        "pep-0578",
+        "pep-0799",
+        "pep-0523",
+        "pep-0768"
+      ]
+    },
+    {
+      "id": "g064",
+      "pyetja": "What are two key goals of introducing new primitives in the `typing` module according to the abstract?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0827"
+      ],
+      "pret": [
+        "pep-0827"
+      ],
+      "refuzim": false,
+      "sekonda": 5.942,
+      "kosto_usd": 0.0007623,
+      "pergjigja": "Broadening the annotation syntax supported by static type checkers without changing Python's grammar, and ensuring the new type-level machinery benefits both static type checkers and frameworks relying on runtime type introspection. [pep-0827]",
+      "gjetjet": [
+        "pep-0827",
+        "pep-0560",
+        "pep-0747",
+        "pep-0483",
+        "pep-0585",
+        "pep-0849"
+      ]
+    },
+    {
+      "id": "g065",
+      "pyetja": "What function does the Python Enhancement Proposal suggest adding to the math module to check if two values are approximately equal?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0485"
+      ],
+      "pret": [
+        "pep-0485"
+      ],
+      "refuzim": false,
+      "sekonda": 2.446,
+      "kosto_usd": 0.0007191,
+      "pergjigja": "isclose()[pep-0485]",
+      "gjetjet": [
+        "pep-0485",
+        "pep-0791",
+        "pep-0207",
+        "pep-0228",
+        "pep-0239",
+        "pep-0240"
+      ]
+    },
+    {
+      "id": "g066",
+      "pyetja": "What change does this document introduce regarding how union types can be written in Python?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0604"
+      ],
+      "pret": [
+        "pep-0604"
+      ],
+      "refuzim": false,
+      "sekonda": 8.797,
+      "kosto_usd": 0.0007752,
+      "pergjigja": "It introduces the ability to write union types as X | Y instead of Union[X, Y]. [pep-0604]",
+      "gjetjet": [
+        "pep-0604",
+        "pep-0849",
+        "pep-0645",
+        "pep-3117",
+        "pep-0584",
+        "pep-0483"
+      ]
+    },
+    {
+      "id": "g067",
+      "pyetja": "What problem does introducing a new entry point for C extension modules solve regarding compatibility between regular and free-threaded builds of CPython?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0793"
+      ],
+      "pret": [
+        "pep-0793"
+      ],
+      "refuzim": false,
+      "sekonda": 2.591,
+      "kosto_usd": 0.0007569,
+      "pergjigja": "It avoids using a statically allocated `PyObject`, enabling a single compiled library file to work with both regular and free-threaded builds of CPython. [pep-0793]",
+      "gjetjet": [
+        "pep-0793",
+        "pep-0803",
+        "pep-0311",
+        "pep-3121",
+        "pep-0809",
+        "pep-0489"
+      ]
+    },
+    {
+      "id": "g068",
+      "pyetja": "What limitation prevents using the same quote character inside an f-string's expression as the one used to delimit the string itself?",
+      "ok": false,
+      "gabim": null,
+      "citime": [],
+      "pret": [
+        "pep-0701"
+      ],
+      "refuzim": true,
+      "sekonda": 4.203,
+      "kosto_usd": 0.0007239,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0536",
+        "pep-0701",
+        "pep-0498",
+        "pep-0215",
+        "pep-0502",
+        "pep-0292"
+      ]
+    },
+    {
+      "id": "g069",
+      "pyetja": "What does the proposed inline syntax allow developers to do when using `TypedDict`?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0764"
+      ],
+      "pret": [
+        "pep-0764"
+      ],
+      "refuzim": false,
+      "sekonda": 4.056,
+      "kosto_usd": 0.0007854,
+      "pergjigja": "The proposed inline syntax allows developers to avoid boilerplate by directly specifying the structure within a function annotation, such as returning `TypedDict[{'name': str, 'year': int}]` without needing to define a named class. [pep-0764]",
+      "gjetjet": [
+        "pep-0764",
+        "pep-0728",
+        "pep-0655",
+        "pep-0589",
+        "pep-0821",
+        "pep-0705"
+      ]
+    },
+    {
+      "id": "g070",
+      "pyetja": "What does this specification define regarding how Python software distributions identify their versions and declare compatibility requirements?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0440"
+      ],
+      "pret": [
+        "pep-0440"
+      ],
+      "refuzim": false,
+      "sekonda": 5.19,
+      "kosto_usd": 0.0007347,
+      "pergjigja": "This specification defines a standardized scheme for identifying versions of Python software distributions and declaring dependencies on particular versions using version specifiers and environment markers. [pep-0440]",
+      "gjetjet": [
+        "pep-0440",
+        "pep-0386",
+        "pep-0345",
+        "pep-0425",
+        "pep-0508",
+        "pep-0262"
+      ]
+    },
+    {
+      "id": "g071",
+      "pyetja": "What are the key goals established by this PEP regarding the transition to Phase II of free-threaded Python development?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0779"
+      ],
+      "pret": [
+        "pep-0779"
+      ],
+      "refuzim": false,
+      "sekonda": 2.412,
+      "kosto_usd": 0.0008205,
+      "pergjigja": "Phase II makes the free-threaded build officially supported but still optional, requiring a non-exhaustive set of requirements to be addressed before transitioning from Phase I’s experimental status. [pep-0779]",
+      "gjetjet": [
+        "pep-0779",
+        "pep-0809",
+        "pep-0803",
+        "pep-0836",
+        "pep-3000",
+        "pep-3003"
+      ]
+    },
+    {
+      "id": "g072",
+      "pyetja": "What was the scheduled release date for the final version of Python 3.3?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0398"
+      ],
+      "pret": [
+        "pep-0398"
+      ],
+      "refuzim": false,
+      "sekonda": 6.211,
+      "kosto_usd": 0.0009405,
+      "pergjigja": "September 2012. [pep-0398]",
+      "gjetjet": [
+        "pep-0398",
+        "pep-0392",
+        "pep-0719",
+        "pep-0375",
+        "pep-0283",
+        "pep-0478"
+      ]
+    },
+    {
+      "id": "g073",
+      "pyetja": "What were the start and end dates of the nomination period for the 2021 Python Steering Council election?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-8102"
+      ],
+      "pret": [
+        "pep-8102"
+      ],
+      "refuzim": false,
+      "sekonda": 5.8,
+      "kosto_usd": 0.0009024,
+      "pergjigja": "The nomination period for the 2021 Python Steering Council election ran from November 1, 2020 through November 16, 2020 at 12:00 UTC. [pep-8102]",
+      "gjetjet": [
+        "pep-8102",
+        "pep-8103",
+        "pep-8100",
+        "pep-8101",
+        "pep-8105",
+        "pep-8107"
+      ]
+    },
+    {
+      "id": "g074",
+      "pyetja": "What are two key components introduced by the proposed pickle protocol version 5 to support efficient transfer of large data like NumPy arrays without unnecessary memory copying?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0574"
+      ],
+      "pret": [
+        "pep-0574"
+      ],
+      "refuzim": false,
+      "sekonda": 2.654,
+      "kosto_usd": 0.0007419,
+      "pergjigja": "A new `PickleBuffer` type for `__reduce_ex__` implementations to return out-of-band data buffers and a new `buffer_callback` parameter when pickling to handle these buffers. [pep-0574]",
+      "gjetjet": [
+        "pep-0574",
+        "pep-3154",
+        "pep-0307",
+        "pep-3118",
+        "pep-0209",
+        "pep-0590"
+      ]
+    },
+    {
+      "id": "g075",
+      "pyetja": "What kind of errors can occur when executing malformed Python Virtual Machine bytecode?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0330"
+      ],
+      "pret": [
+        "pep-0330"
+      ],
+      "refuzim": false,
+      "sekonda": 3.603,
+      "kosto_usd": 0.0007158,
+      "pergjigja": "Underflowing or overflowing the value stack or reading/writing into arbitrary areas of the PVM program space. [pep-0330]",
+      "gjetjet": [
+        "pep-0330",
+        "pep-0657",
+        "pep-0293",
+        "pep-0304",
+        "pep-0490",
+        "pep-0473"
+      ]
+    },
+    {
+      "id": "g076",
+      "pyetja": "What does this document state about the status of the proposed enhancements to Python's HTTP functionality?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0268"
+      ],
+      "pret": [
+        "pep-0268"
+      ],
+      "refuzim": false,
+      "sekonda": 3.107,
+      "kosto_usd": 0.0007602,
+      "pergjigja": "This PEP has been rejected. It has failed to generate sufficient community support in the six years since its proposal. [pep-0268]",
+      "gjetjet": [
+        "pep-0268",
+        "pep-0222",
+        "pep-0042",
+        "pep-0434",
+        "pep-3003",
+        "pep-0283"
+      ]
+    },
+    {
+      "id": "g077",
+      "pyetja": "What changes does the revised buffer protocol propose regarding the handling of character buffers and multi-segment memory in Python 3.0?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-3118"
+      ],
+      "pret": [
+        "pep-3118"
+      ],
+      "refuzim": false,
+      "sekonda": 2.629,
+      "kosto_usd": 0.0007437,
+      "pergjigja": "It eliminates the character buffer portion of the API and redesigns the multiple-segment portion to support strided memory. [pep-3118]",
+      "gjetjet": [
+        "pep-3118",
+        "pep-3137",
+        "pep-0688",
+        "pep-0298",
+        "pep-0332",
+        "pep-0358"
+      ]
+    },
+    {
+      "id": "g078",
+      "pyetja": "What types of changes does the proposal suggest for standard library modules in preparation for Python 3000?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0364",
+        "pep-3001",
+        "pep-3108"
+      ],
+      "pret": [
+        "pep-3001"
+      ],
+      "refuzim": false,
+      "sekonda": 4.874,
+      "kosto_usd": 0.0007854,
+      "pergjigja": "The proposal suggests removal of obsolete modules and renaming of modules to follow a hierarchical structure and the Python style guide. [pep-3001][pep-0364][pep-3108]",
+      "gjetjet": [
+        "pep-3100",
+        "pep-3001",
+        "pep-0364",
+        "pep-3108",
+        "pep-3002",
+        "pep-3000"
+      ]
+    },
+    {
+      "id": "g079",
+      "pyetja": "What annotation allows a method's return type to dynamically reflect the actual class of the instance on which it is called, ensuring correct typing for subclasses? ?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0673"
+      ],
+      "pret": [
+        "pep-0673"
+      ],
+      "refuzim": false,
+      "sekonda": 3.386,
+      "kosto_usd": 0.0007326,
+      "pergjigja": "Self [pep-0673]",
+      "gjetjet": [
+        "pep-0673",
+        "pep-0747",
+        "pep-0698",
+        "pep-0593",
+        "pep-0718",
+        "pep-0746"
+      ]
+    },
+    {
+      "id": "g080",
+      "pyetja": "What alternative approach does this PEP propose to reduce the frequency of major CPython feature releases while still enabling earlier availability of new features?",
+      "ok": true,
+      "gabim": null,
+      "citime": [
+        "pep-0598"
+      ],
+      "pret": [
+        "pep-0598"
+      ],
+      "refuzim": false,
+      "sekonda": 3.585,
+      "kosto_usd": 0.0007185,
+      "pergjigja": "Reduce the frequency of new baseline feature releases to every other year, but introduce backwards-compatible features in point releases within a release series. [pep-0598]",
+      "gjetjet": [
+        "pep-0607",
+        "pep-0598",
+        "pep-0605",
+        "pep-0407",
+        "pep-0413",
+        "pep-0608"
+      ]
+    },
+    {
+      "id": "k001",
+      "pyetja": "What does PEP 3943 propose?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 2.584,
+      "kosto_usd": 0.0007371,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0401",
+        "pep-3002",
+        "pep-3003",
+        "pep-0042",
+        "pep-3099"
+      ]
+    },
+    {
+      "id": "k002",
+      "pyetja": "What does PEP 2479 propose?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 2.293,
+      "kosto_usd": 0.0007392,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0009",
+        "pep-0042",
+        "pep-3002",
+        "pep-0676",
+        "pep-0012"
+      ]
+    },
+    {
+      "id": "k003",
+      "pyetja": "What does PEP 9346 propose?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 4.745,
+      "kosto_usd": 0.0006798,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0009",
+        "pep-0676",
+        "pep-0012",
+        "pep-0801",
+        "pep-0042"
+      ]
+    },
+    {
+      "id": "k004",
+      "pyetja": "What does PEP 2873 propose?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 7.055,
+      "kosto_usd": 0.0007392,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0676",
+        "pep-3002",
+        "pep-0042",
+        "pep-0009",
+        "pep-0012"
+      ]
+    },
+    {
+      "id": "k005",
+      "pyetja": "What does PEP 8969 propose?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 3.099,
+      "kosto_usd": 0.0006774,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0801",
+        "pep-0001",
+        "pep-0009",
+        "pep-8001",
+        "pep-0676",
+        "pep-0042"
+      ]
+    },
+    {
+      "id": "k006",
+      "pyetja": "What does PEP 7695 propose?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 2.395,
+      "kosto_usd": 0.0006798,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0009",
+        "pep-0012",
+        "pep-0042",
+        "pep-0676",
+        "pep-0801"
+      ]
+    },
+    {
+      "id": "k007",
+      "pyetja": "What does PEP 2890 propose?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 3.002,
+      "kosto_usd": 0.0006807,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0009",
+        "pep-0801",
+        "pep-3002",
+        "pep-0012",
+        "pep-0042"
+      ]
+    },
+    {
+      "id": "k008",
+      "pyetja": "What does PEP 2303 propose?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 2.4,
+      "kosto_usd": 0.0007494,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-3002",
+        "pep-0001",
+        "pep-3100",
+        "pep-3003",
+        "pep-3000",
+        "pep-3099"
+      ]
+    },
+    {
+      "id": "k009",
+      "pyetja": "What does PEP 3435 propose?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 2.205,
+      "kosto_usd": 0.0007332,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0042",
+        "pep-0001",
+        "pep-3003",
+        "pep-3099",
+        "pep-3100",
+        "pep-3002"
+      ]
+    },
+    {
+      "id": "k010",
+      "pyetja": "What does PEP 1985 propose?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 2.621,
+      "kosto_usd": 0.0006783,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0009",
+        "pep-0012",
+        "pep-0676",
+        "pep-0801",
+        "pep-8001"
+      ]
+    },
+    {
+      "id": "k011",
+      "pyetja": "What does PEP 4113 propose?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 2.206,
+      "kosto_usd": 0.000735,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0719",
+        "pep-0042",
+        "pep-0676",
+        "pep-0801",
+        "pep-0012"
+      ]
+    },
+    {
+      "id": "k012",
+      "pyetja": "What does PEP 4289 propose?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 2.284,
+      "kosto_usd": 0.0006849,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0801",
+        "pep-0042",
+        "pep-0009",
+        "pep-8001",
+        "pep-0749"
+      ]
+    },
+    {
+      "id": "x001",
+      "pyetja": "What is the classic recipe for Albanian byrek with spinach?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 9.274,
+      "kosto_usd": 0.0,
+      "pergjigja": "I don't know — no archive entry passes the evidence threshold.",
+      "gjetjet": [
+        "pep-3128",
+        "pep-0020",
+        "pep-0322",
+        "pep-3132",
+        "pep-0202",
+        "pep-0313"
+      ]
+    },
+    {
+      "id": "x002",
+      "pyetja": "Who won the 2018 FIFA World Cup?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 1.568,
+      "kosto_usd": 0.0,
+      "pergjigja": "I don't know — no archive entry passes the evidence threshold.",
+      "gjetjet": [
+        "pep-0569",
+        "pep-8104",
+        "pep-8101",
+        "pep-8107",
+        "pep-8105",
+        "pep-8106"
+      ]
+    },
+    {
+      "id": "x003",
+      "pyetja": "How do I configure a Rust borrow checker in Python?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 2.135,
+      "kosto_usd": 0.0007263,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0647",
+        "pep-0688",
+        "pep-0776",
+        "pep-0484",
+        "pep-0781",
+        "pep-0674"
+      ]
+    },
+    {
+      "id": "x004",
+      "pyetja": "What is the boiling point of mercury at sea level?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 1.68,
+      "kosto_usd": 0.0,
+      "pergjigja": "I don't know — no archive entry passes the evidence threshold.",
+      "gjetjet": [
+        "pep-0385",
+        "shenim-nebius-video-1",
+        "pep-0326",
+        "pep-0494",
+        "pep-0485",
+        "pep-0327"
+      ]
+    },
+    {
+      "id": "x005",
+      "pyetja": "Which PEP sets the release date of Python 5.0?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 2.355,
+      "kosto_usd": 0.0009054,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0478",
+        "pep-0790",
+        "pep-0356",
+        "pep-0596",
+        "pep-0392",
+        "pep-0101"
+      ]
+    },
+    {
+      "id": "x006",
+      "pyetja": "What does the Java Community Process say about generics?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 3.354,
+      "kosto_usd": 0.0007164,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-3124",
+        "pep-0585",
+        "pep-0001",
+        "pep-0695",
+        "pep-0646",
+        "pep-0560"
+      ]
+    },
+    {
+      "id": "x007",
+      "pyetja": "How many moons does Jupiter have?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 8.669,
+      "kosto_usd": 0.0,
+      "pergjigja": "I don't know — no archive entry passes the evidence threshold.",
+      "gjetjet": [
+        "pep-0303",
+        "pep-0554",
+        "pep-0628",
+        "pep-0734",
+        "pep-0042",
+        "pep-0313"
+      ]
+    },
+    {
+      "id": "x008",
+      "pyetja": "Which PEP mandates tabs over spaces for the C implementation of Go?",
+      "ok": true,
+      "gabim": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 3.951,
+      "kosto_usd": 0.0006828,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0666",
+        "pep-0008",
+        "pep-0007",
+        "pep-0009",
+        "pep-0012",
+        "pep-0801"
+      ]
+    }
+  ],
+  "arkiva": "745 units from arkiva-peps"
+}

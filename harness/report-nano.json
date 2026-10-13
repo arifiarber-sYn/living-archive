@@ -1,0 +1,25 @@
+{
+  "shkalla": "2026-10-13",
+  "modeli": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "njesi_arkive": 388,
+  "pyetje": 13,
+  "sakte": 11,
+  "sakte_pct": 84.6,
+  "citim_sakte": 8,
+  "refuzime_sakte": 3,
+  "refuzime_totale": 4,
+  "latence_p50_s": 2.341,
+  "kosto_totale_usd": 0.00219216,
+  "kosto_mesatare_usd": 0.00016863,
+  "funnel": {
+    "me_id_te_pritur": 7,
+    "top1": 3,
+    "top3": 6,
+    "gjetur": 7,
+    "fjale_korpus": 110779,
+    "fjale_te_lexuara_nga_modeli_maks": 8400,
+    "pjesa_e_korpusit_qe_sheh_modeli_pct": 7.58
+  },
+  "rreshtat": "redacted in the public tree — the private corpus is never published; per-row data lives in report-peps*.json",
+  "arkiva": "388 units from arkiva"
+}

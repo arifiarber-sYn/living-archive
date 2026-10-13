@@ -1,0 +1,16 @@
+.env
+out/
+__pycache__/
+*.pyc
+arkiva/embeddings.bin
+arkiva/embeddings.json
+arkiva-peps/embeddings.bin
+arkiva-peps/embeddings.json
+*.log
+ft/*.jsonl
+ft/job.json
+docs/screenshots/.trash/
+matje/.buxheti-*.json
+
+# private archive (never published) — see README «Public example corpus»
+arkiva/

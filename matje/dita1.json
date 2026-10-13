@@ -1,0 +1,33 @@
+{
+  "dita": 1,
+  "data": "2026-10-13",
+  "pronari": "halim",
+  "profili": "nebius (~/.openclaw-nebius, i izoluar)",
+  "provider": "nemotron (Token Factory, api=openai-completions)",
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "rezultat": {
+    "R1_thinking_default": {
+      "kaluar": true,
+      "prova": "agent --local -m 'Reply with the single word OK' -> 'OK'",
+      "elapsedMs": 1125
+    },
+    "R2_tool_calling_openclaw": {
+      "kaluar": true,
+      "prova": "agent --local (exec) -> NEMOTRON_TOOL_OK",
+      "thirrje_modeli": 2,
+      "elapsedMs": [
+        1235,
+        1002
+      ]
+    },
+    "R3_sse": {
+      "kaluar": true,
+      "prova": "contentType=text/event-stream (te dyja thirrjet)"
+    }
+  },
+  "shenime": [
+    "models list kerkon kredenciale gateway (profili s'ka gateway); --local punon",
+    "embeddings semantike joaktive ne profilin e izoluar (pa provider embeddings)",
+    "apiKey = SecretRef env NEBIUS_API_KEY (vlera lexohet nga thesari ne runtime; kurrë ne config)"
+  ]
+}

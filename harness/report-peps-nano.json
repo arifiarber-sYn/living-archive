@@ -1,0 +1,338 @@
+{
+  "shkalla": "2026-10-13",
+  "modeli": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
+  "njesi_arkive": 746,
+  "pyetje": 13,
+  "sakte": 13,
+  "sakte_pct": 100.0,
+  "citim_sakte": 9,
+  "refuzime_sakte": 4,
+  "refuzime_totale": 4,
+  "latence_p50_s": 3.264,
+  "kosto_totale_usd": 0.0017871,
+  "kosto_mesatare_usd": 0.00013747,
+  "funnel": {
+    "me_id_te_pritur": 9,
+    "top1": 9,
+    "top3": 9,
+    "gjetur": 9,
+    "fjale_korpus": 792450,
+    "fjale_te_lexuara_nga_modeli_maks": 8400,
+    "pjesa_e_korpusit_qe_sheh_modeli_pct": 1.06
+  },
+  "rreshtat": [
+    {
+      "id": "q01",
+      "pyetja": "Which PEP is the style guide for Python code?",
+      "ok": true,
+      "gabim": null,
+      "rangu": 1,
+      "citime": [
+        "pep-0008"
+      ],
+      "pret": [
+        "pep-0008"
+      ],
+      "refuzim": false,
+      "sekonda": 2.022,
+      "kosto_usd": 0.00014784,
+      "pergjigja": "PEP 8 — Style Guide for Python Code [pep-0008]",
+      "gjetjet": [
+        "pep-0008",
+        "pep-0009",
+        "pep-0012",
+        "pep-0001",
+        "pep-0020",
+        "pep-0676"
+      ]
+    },
+    {
+      "id": "q02",
+      "pyetja": "Which PEP introduced f-strings, i.e. literal string interpolation?",
+      "ok": true,
+      "gabim": null,
+      "rangu": 1,
+      "citime": [
+        "pep-0498"
+      ],
+      "pret": [
+        "pep-0498"
+      ],
+      "refuzim": false,
+      "sekonda": 11.879,
+      "kosto_usd": 0.00014808,
+      "pergjigja": "PEP 498 introduced f-strings, i.e. literal string interpolation [pep-0498]",
+      "gjetjet": [
+        "pep-0498",
+        "pep-0536",
+        "pep-0701",
+        "pep-0502",
+        "pep-0215",
+        "pep-0501"
+      ]
+    },
+    {
+      "id": "q03",
+      "pyetja": "Which PEP added assignment expressions (the walrus operator)?",
+      "ok": true,
+      "gabim": null,
+      "rangu": 1,
+      "citime": [
+        "pep-0572"
+      ],
+      "pret": [
+        "pep-0572"
+      ],
+      "refuzim": false,
+      "sekonda": 3.852,
+      "kosto_usd": 0.00014958,
+      "pergjigja": "PEP 572 added assignment expressions (the walrus operator) [pep-0572]",
+      "gjetjet": [
+        "pep-0572",
+        "pep-0379",
+        "pep-0577",
+        "pep-0203",
+        "pep-0532",
+        "pep-0308"
+      ]
+    },
+    {
+      "id": "q04",
+      "pyetja": "Which PEP introduced type hints?",
+      "ok": true,
+      "gabim": null,
+      "rangu": 1,
+      "citime": [
+        "pep-0484"
+      ],
+      "pret": [
+        "pep-0484"
+      ],
+      "refuzim": false,
+      "sekonda": 2.04,
+      "kosto_usd": 0.0001479,
+      "pergjigja": "PEP 484 introduced type hints [pep-0484]",
+      "gjetjet": [
+        "pep-0484",
+        "pep-0483",
+        "pep-0482",
+        "pep-0563",
+        "pep-0585",
+        "pep-0561"
+      ]
+    },
+    {
+      "id": "q05",
+      "pyetja": "Which PEP contains the Zen of Python?",
+      "ok": true,
+      "gabim": null,
+      "rangu": 1,
+      "citime": [
+        "pep-0020"
+      ],
+      "pret": [
+        "pep-0020"
+      ],
+      "refuzim": false,
+      "sekonda": 1.837,
+      "kosto_usd": 0.0001497,
+      "pergjigja": "The Zen of Python is contained in PEP 20 [pep-0020].",
+      "gjetjet": [
+        "pep-0020",
+        "pep-0001",
+        "pep-0009",
+        "pep-0012",
+        "pep-0401",
+        "pep-0008"
+      ]
+    },
+    {
+      "id": "q06",
+      "pyetja": "Which PEPs specify or teach structural pattern matching (the match statement)?",
+      "ok": true,
+      "gabim": null,
+      "rangu": 1,
+      "citime": [
+        "pep-0634",
+        "pep-0636"
+      ],
+      "pret": [
+        "pep-0634",
+        "pep-0635",
+        "pep-0636"
+      ],
+      "refuzim": false,
+      "sekonda": 2.639,
+      "kosto_usd": 0.00015774,
+      "pergjigja": "PEP 634 provides the technical specification for the match statement, while PEP 636 offers a tutorial that teaches how to use it. [pep-0634] [pep-0636]",
+      "gjetjet": [
+        "pep-0634",
+        "pep-0622",
+        "pep-0642",
+        "pep-0636",
+        "pep-0635",
+        "pep-0653"
+      ]
+    },
+    {
+      "id": "q07",
+      "pyetja": "Which PEP defines the PEP process itself — its purpose and guidelines?",
+      "ok": true,
+      "gabim": null,
+      "rangu": 1,
+      "citime": [
+        "pep-0001"
+      ],
+      "pret": [
+        "pep-0001"
+      ],
+      "refuzim": false,
+      "sekonda": 3.583,
+      "kosto_usd": 0.00014994,
+      "pergjigja": "PEP 1 defines the PEP process itself — its purpose and guidelines [pep-0001].",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0009",
+        "pep-0012",
+        "pep-0676",
+        "pep-0609",
+        "pep-0013"
+      ]
+    },
+    {
+      "id": "q08",
+      "pyetja": "Which PEP proposes making the global interpreter lock optional in CPython?",
+      "ok": true,
+      "gabim": null,
+      "rangu": 1,
+      "citime": [
+        "pep-0703"
+      ],
+      "pret": [
+        "pep-0703"
+      ],
+      "refuzim": false,
+      "sekonda": 3.264,
+      "kosto_usd": 0.0001344,
+      "pergjigja": "PEP 703 proposes making the global interpreter lock optional in CPython [pep-0703]",
+      "gjetjet": [
+        "pep-0703",
+        "pep-0684",
+        "pep-0311",
+        "pep-0779",
+        "pep-0210",
+        "pep-0583"
+      ]
+    },
+    {
+      "id": "q09",
+      "pyetja": "Which PEP introduced the with statement?",
+      "ok": true,
+      "gabim": null,
+      "rangu": 1,
+      "citime": [
+        "pep-0343"
+      ],
+      "pret": [
+        "pep-0343"
+      ],
+      "refuzim": false,
+      "sekonda": 5.406,
+      "kosto_usd": 0.00015234,
+      "pergjigja": "PEP 343 introduced the with statement [pep-0343]",
+      "gjetjet": [
+        "pep-0343",
+        "pep-0346",
+        "pep-0310",
+        "pep-0236",
+        "pep-0377",
+        "pep-0401"
+      ]
+    },
+    {
+      "id": "q10",
+      "pyetja": "What does PEP 9999 propose?",
+      "ok": true,
+      "gabim": null,
+      "rangu": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 5.627,
+      "kosto_usd": 0.0001488,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0001",
+        "pep-0009",
+        "pep-0012",
+        "pep-0042",
+        "pep-8001",
+        "pep-0676"
+      ]
+    },
+    {
+      "id": "q11",
+      "pyetja": "Which PEP specifies a Rust-style borrow checker for Python?",
+      "ok": true,
+      "gabim": null,
+      "rangu": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 2.037,
+      "kosto_usd": 0.00011934,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0688",
+        "pep-3117",
+        "pep-0210",
+        "pep-0801",
+        "pep-0042",
+        "pep-3002"
+      ]
+    },
+    {
+      "id": "q12",
+      "pyetja": "What is the classic recipe for Albanian byrek with spinach?",
+      "ok": true,
+      "gabim": null,
+      "rangu": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 2.009,
+      "kosto_usd": 0.0,
+      "pergjigja": "I don't know — no archive entry passes the evidence threshold.",
+      "gjetjet": [
+        "pep-3128",
+        "pep-0020",
+        "pep-0322",
+        "pep-3132",
+        "pep-0202",
+        "pep-0313"
+      ]
+    },
+    {
+      "id": "q13",
+      "pyetja": "Which PEP sets the release date of Python 5.0?",
+      "ok": true,
+      "gabim": null,
+      "rangu": null,
+      "citime": [],
+      "pret": null,
+      "refuzim": true,
+      "sekonda": 9.308,
+      "kosto_usd": 0.00018144,
+      "pergjigja": "I don't know.",
+      "gjetjet": [
+        "pep-0478",
+        "pep-0790",
+        "pep-0356",
+        "pep-0596",
+        "pep-0392",
+        "pep-0101"
+      ]
+    }
+  ],
+  "arkiva": "746 units from arkiva-peps"
+}
