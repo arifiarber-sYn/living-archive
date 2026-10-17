@@ -79,6 +79,10 @@ def _cos(a: list[float], b: list[float]) -> float:
     return num / (na * nb) if na and nb else 0.0
 
 
+def _norm_pyetja(pyetja: str) -> str:
+    """Normalizon identifikuesit PEP: pep 572 -> PEP 572 (retrieval)."""
+    return re.sub(r"\bpep[\s_-]*(\d{1,4})\b", r"PEP \1", pyetja, flags=re.IGNORECASE)
+
 class Arkiva:
     def __init__(self) -> None:
         self.njesi = []
@@ -143,6 +147,7 @@ class Arkiva:
         return [{'id': i, 'skor': round(s, 6), 'teksti': teksti[i]} for i, s in renditur]
 
     def kerko(self, pyetja: str, k: int = TOPK) -> list[dict]:
+        pyetja = _norm_pyetja(pyetja)
         if self.vec is not None:
             if HIBRID:
                 return self.kerko_hibrid(pyetja, k)
