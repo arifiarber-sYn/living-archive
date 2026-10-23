@@ -170,7 +170,8 @@ def _thirr(messages: list[dict], max_tokens: int = 300, temp: float = 0.0) -> di
 
 def _teksti(d: dict) -> str:
     m = ((d.get('choices') or [{}])[0].get('message') or {})
-    return str(m.get('content') or m.get('reasoning_content') or '')
+    # reasoning-models (Nemotron) put the answer in `reasoning`; without this the demo prints nothing
+    return str(m.get('content') or m.get('reasoning_content') or m.get('reasoning') or '')
 
 
 RX_CITIM = r'\[(?:vendim-|mesim-)?([a-z]{1,6}\d{0,2}-\d{1,4})\]'  # d-070 · l-12 · pep-0008 · d2-01; filtered to real ids below
