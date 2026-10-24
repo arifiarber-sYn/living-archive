@@ -2,7 +2,7 @@
 
 > **One line:** A private assistant that answers only from your own archive, cites the exact entry it used, and says *I don't know* when the archive has no evidence — with a git-tracked, human-readable memory instead of a vector-DB black box.
 >
-> *Nebius × NVIDIA Global AI Hackathon · Track: Best apps and agents · License: Apache-2.0*
+> *Nebius × NVIDIA Global AI Hackathon · Track: Personal AI · License: Apache-2.0*
 
 <!-- readme_rubrika v1 (12.10.2026) · rubrika `nebius.json` 1.0 sha c32642c899c8 · sections follow the judging criteria by weight -->
 
