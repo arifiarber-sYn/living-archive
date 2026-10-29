@@ -64,6 +64,24 @@ Every number in this README was measured by the harness (`harness/report.json`, 
 **Error states are visible:** below the evidence threshold the system refuses *before* calling the model (zero cost, zero hallucination); when the model is asked anyway it is instructed to reply `I don't know` — and the UI shows that as a red REFUSED, not as an empty box.
 A stranger can use it in under a minute: one input field, one button, four example questions (two of them traps), and a result that always shows its citations, latency and cost. The screenshots were taken by `tools/screenshots.py` against the running demo on the public PEP corpus — real calls, nothing edited.
 
+## Run it with Docker
+
+The project is standard-library only: the image is 139 MB and needs no \`pip install\`.
+Verified with \`docker build\` followed by \`docker run\`.
+
+\`\`\`bash
+docker build -t living-archive .
+docker run --rm -e NEBIUS_API_KEY=... living-archive "Which decision grants unlimited autonomy to the agent?"
+\`\`\`
+
+Prefer the web UI over the CLI:
+
+\`\`\`bash
+docker run --rm -p 8000:8000 living-archive python3 -m src.server
+\`\`\`
+
+Without a key the container stops by design (fail-closed) instead of answering from nothing.
+
 ## Run it as an agent (OpenClaw profile — remembers across sessions, takes real action)
 
 <!-- rubrika:design/idea · the Personal AI track asks for an agent that "remembers context across sessions and takes real action" -->
