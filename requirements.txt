@@ -1,0 +1,2 @@
+# No third-party dependencies: the project runs on the Python standard library.
+# (pdftotext, when used, is a system binary, not a pip package.)

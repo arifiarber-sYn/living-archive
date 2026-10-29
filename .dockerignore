@@ -1,0 +1,8 @@
+# version control and local noise
+.git
+__pycache__
+*.pyc
+*.bak-*
+.venv
+venv
+*.log
