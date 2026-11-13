@@ -16,8 +16,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-          cache: pip
-          cache-dependency-path: requirements.txt
+          # No pip cache: the project is standard-library only, so there is nothing to cache.
       - name: Run tests
         run: |
           python3 -m pip install -r requirements.txt
