@@ -1,5 +1,7 @@
 # Living Archive — a personal AI whose memory is auditable
 
+[![CI](https://github.com/arifiarber-sYn/living-archive/actions/workflows/ci.yml/badge.svg)](https://github.com/arifiarber-sYn/living-archive/actions/workflows/ci.yml)
+
 > **One line:** A private assistant that answers only from your own archive, cites the exact entry it used, and says *I don't know* when the archive has no evidence — with a git-tracked, human-readable memory instead of a vector-DB black box.
 >
 > *Nebius × NVIDIA Global AI Hackathon · Track: Personal AI · License: Apache-2.0*
